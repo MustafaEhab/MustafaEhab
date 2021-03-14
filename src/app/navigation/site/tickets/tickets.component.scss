@@ -1,0 +1,131 @@
+.tickets-container {
+  background-image: linear-gradient(
+      45deg,
+      rgba($color: #262524, $alpha: 0.5),
+      rgba($color: #262524, $alpha: 0.5)
+    ),
+    url(../../../../assets/imgs/54_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.title {
+  color: #fea30f;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba($color: #000, $alpha: 1);
+  font-size: xx-large;
+}
+.divider-img {
+  max-width: 50px !important;
+  width: 50px;
+}
+.divider-img img {
+  position: relative;
+  width: 50px;
+}
+.left-border {
+  height: 3px;
+  background-color: #fea30f;
+  color: transparent;
+  border-radius: 5px;
+}
+.contain {
+  width: 90%;
+}
+.tickets-desc {
+  color: #fff;
+  text-align: center;
+  text-justify: center;
+}
+// .bg-ticket {
+//   background-image: url(../../../../assets/imgs/ticket-theme.png);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-attachment: initial;
+// }
+.international-title {
+  color: #fea30f;
+}
+.symbol {
+  vertical-align: text-top;
+}
+.ticket-holder {
+  padding-left: 10%;
+}
+.ticket-holder h3 {
+  font-size: 1.3vw;
+  color: #262524;
+}
+.ticket-holder h3 small {
+  font-weight: 600;
+}
+.fourth-title:first-letter {
+  color: #fea30f;
+  font-size: 2.7vw;
+}
+.ticket-holder h5 {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+.cost {
+  font-size: 3.3vw;
+  font-weight: 700;
+  color: #262524;
+  opacity: 0.8;
+  text-shadow: 2px 2px 5px #000;
+}
+// .ticket-holder h3
+.btn {
+  font-weight: 600 !important;
+}
+.dollar {
+  color: #fea30f;
+  font-size: 3vw;
+}
+.btn-outline-warning {
+  // font-size: 1.3vw;
+  background-color: #fff !important;
+}
+.btn-outline-warning:hover {
+  background-color: #fea30f !important;
+}
+@media screen and (max-width: 767.5px) {
+  .ticket-holder h3 {
+    font-size: 3.1vw;
+  }
+  .fourth-title:first-letter {
+    font-size: 3.8vw;
+  }
+  .ticket-holder h5 {
+    font-size: 1.8vw;
+  }
+  .cost {
+    font-size: 6vw;
+  }
+  .dollar {
+    color: #fea30f;
+    font-size: 3.5vw;
+  }
+  .btn-outline-warning {
+    font-size: 1.8vw;
+  }
+}
+@media screen and (max-width: 575.5px) {
+  .ticket-holder h3 {
+    font-size: 3.5vw;
+  }
+  .fourth-title:first-letter {
+    font-size: 4vw;
+  }
+  .ticket-holder h5 {
+    font-size: 2vw;
+  }
+  .cost {
+    font-size: 8vw;
+  }
+  .btn-outline-warning {
+    font-size: 2.1vw;
+  }
+}

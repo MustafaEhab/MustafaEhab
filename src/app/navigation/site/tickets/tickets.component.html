@@ -1,0 +1,163 @@
+<div class="tickets-container py-5 w-100">
+    <div class="contain mx-auto">
+        <div class="text-center pt-5">
+            <h1 class="title text-uppercase" data-aos="zoom-in-up">
+                Buy Ticket
+            </h1>
+            <div class="row justify-content-center align-items-center align-content-center">
+                <div class="col-1 left-border mx-0">
+                </div>
+                <div class="col-1 px-0 mx-0 flex-column divider-img">
+                    <img src="../../../../assets/svg/logo_no_text_light2.svg" class=" mx-0 px-0" alt="">
+                </div>
+                <div class="col-1 left-border mx-0">
+                </div>
+            </div>
+            <h3 class="tickets-desc">
+                Be hurry! Last Conference tickets was sold out in just one month.
+            </h3>
+        </div>
+        <div class="row w-100">
+            <div class="col-12">
+                <div class="w-100 h-100 px-4 py-3 text-center">
+                    <h1 class="international-title ">
+                        International and Regional Participants
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-2 px-4 justify-content-center align-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-4"
+                *ngFor="let ticket of prices_international ; let i = index" data-aos="zoom-in" data-aos-duration="400">
+                <div class="div">
+                    <img src="../../../../assets/imgs/ticket-theme.png" alt="" style="height: 100%; width: 100%;"
+                        class="card-img">
+                    <div class="ticket-holder card-img-overlay">
+                        <div class="row p-0 m-0">
+                            <div class="col-7 p-0 m-0">
+                                <div class="w-100 h-100 p-0 m-0">
+                                    <h3 class="fourth-title">
+                                        4<small class="symbol">th</small> IAAH MENA REGION
+                                        <br>
+                                        <small><small>
+                                                ADOLESCENT HEALTH CONFERENCE
+                                            </small>
+                                        </small>
+                                    </h3>
+                                    <h5>
+                                        <span style="color: #fea30f;">
+                                            From :
+                                        </span>
+                                        <span class="text-muted">
+                                            {{conferenceDate | date : 'mediumDate'}}
+                                        </span>
+                                        <br>
+                                        <span style="color: #fea30f;">
+                                            To :
+                                        </span>
+                                        <span class="text-muted">
+                                            {{endDate | date : 'mediumDate'}}
+                                        </span>
+                                    </h5>
+                                    <h3 style="font-weight: 500;">
+                                        {{ticket.guest}}
+                                    </h3>
+
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="h-100 w-100 d-flex text-center px-0">
+                                    <div class="h-75 my-auto px-0">
+                                        <h1 class="px-0 mx-0">
+                                            <span class="cost">
+                                                {{ticket.amount}}
+                                            </span>
+                                            <span class="dollar">
+                                                {{ticket.currency}}
+                                            </span>
+                                        </h1>
+                                        <button class="btn btn-outline-warning" (click)="openDialog(ticket.id)"
+                                            [disabled]="cantRegiser">
+                                            Buy Ticket
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="col-12">
+                <div class="w-100 h-100 px-4 pt-5 pb-3 text-center">
+                    <h1 class="international-title ">
+                        Egyptian Participants
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-2 px-4 justify-content-center align-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-4" *ngFor="let ticket of prices_egy ; let i = index"
+                data-aos="zoom-in" data-aos-duration="400">
+                <div class="div">
+                    <img src="../../../../assets/imgs/ticket-theme.png" alt="" style="height: 100%; width: 100%;"
+                        class="card-img">
+                    <div class="ticket-holder card-img-overlay">
+                        <div class="row p-0 m-0">
+                            <div class="col-7 p-0 m-0">
+                                <div class="w-100 h-100 p-0 m-0">
+                                    <h3 class="fourth-title">
+                                        4<small class="symbol">th</small> IAAH MENA REGION
+                                        <br>
+                                        <small><small>
+                                                ADOLESCENT HEALTH CONFERENCE
+                                            </small>
+                                        </small>
+                                    </h3>
+                                    <h5>
+                                        <span style="color: #fea30f;">
+                                            From :
+                                        </span>
+                                        <span class="text-muted">
+                                            {{conferenceDate | date : 'mediumDate'}}
+                                        </span>
+                                        <br>
+                                        <span style="color: #fea30f;">
+                                            To :
+                                        </span>
+                                        <span class="text-muted">
+                                            {{endDate | date : 'mediumDate'}}
+                                        </span>
+                                    </h5>
+                                    <h3 style="font-weight: 500;">
+                                        {{ticket.guest}}
+                                    </h3>
+
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="h-100 w-100 d-flex text-center px-0">
+                                    <div class="h-75 my-auto px-0">
+                                        <h1 class="px-0 mx-0">
+                                            <span class="cost">
+                                                {{ticket.amount}}
+                                            </span>
+                                            <span class="dollar">
+                                                {{ticket.currency}}
+                                            </span>
+                                        </h1>
+                                        <button class="btn btn-outline-warning" (click)="openDialogEgy(ticket.id)"
+                                            [disabled]="cantRegiser">
+                                            Buy Ticket
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

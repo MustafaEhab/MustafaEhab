@@ -1,0 +1,23 @@
+.title {
+  color: #262524;
+  font-weight: 600;
+  font-size: xx-large;
+  text-shadow: 2px 2px 5px rgba($color: #000, $alpha: 1);
+}
+.title h1 {
+  font-size: xx-large;
+}
+.divider-img {
+  max-width: 50px !important;
+  width: 50px;
+}
+.divider-img img {
+  position: relative;
+  width: 50px;
+}
+.left-border {
+  height: 3px;
+  background-color: #fea30f;
+  color: transparent;
+  border-radius: 5px;
+}

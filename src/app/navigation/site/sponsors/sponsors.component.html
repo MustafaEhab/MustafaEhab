@@ -1,0 +1,26 @@
+<div class="container py-5">
+    <div class="position-relative  text-center py-5 text-uppercase">
+        <h1 data-aos="zoom-in-up" class="title">
+            Our Sponsors
+        </h1>
+        <div class="row justify-content-center align-items-center align-content-center">
+            <div class="col-1 left-border mx-0">
+
+            </div>
+            <div class="col-1 px-0 mx-0 flex-column divider-img">
+                <img src="../../../../assets/svg/logo_no_text-dark.svg" class=" mx-0 px-0" alt="">
+            </div>
+            <div class="col-1 left-border mx-0">
+
+            </div>
+        </div>
+    </div>
+    <div class="pt-4 px-0 pb-0">
+        <ngx-slick-carousel ick-carouselclass="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+            (init)="slickInit($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide" class="p-0 m-0">
+                <img src="{{slide.img}}" alt="" width="100%" class="slick-image">
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</div>

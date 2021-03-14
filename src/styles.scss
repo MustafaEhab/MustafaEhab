@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: cairo;
+  src: url(assets/fonts/Cairo-Regular.ttf) format("opentype");
+}
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+  overflow-y: initial;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+
+  // overflow-x: auto;
+  font-family: cairo !important;
+  padding: 0;
+  margin: 0;
+}
+* {
+  font-family: cairo !important;
+}
+.scrolledNav {
+  background-color: rgba($color: #000, $alpha: 1) !important;
+  box-shadow: 2px 0px 5px rgba($color: #000, $alpha: 1);
+}
+.my-dialog-class .mat-dialog-container {
+  // background-color: transparent !important;
+  // border-color: transparent !important;
+  // padding: 0 !important;
+  top: 40% !important;
+}
+// ::ng-deep .mat-dialog-container {
+//   background-color: transparent !important;
+//   border-color: transparent !important;
+//   top: 20% !important;
+//   /* padding: 0 !important; */
+//   /* padding-top: 7% !important; */
+// }
+// ::ng-deep mat-dialog-container {
+//   background-color: transparent !important;
+//   border-color: transparent !important;
+//   top: 40% !important;
+//   /* padding: 0 !important; */
+//   /* padding-top: 7% !important; */
+// }
+// ::ng-deep .cdk-overlay-pane {
+// }
+
+// ::ng-deep .cdk-overlay-container {
+//   z-index: 20 !important;
+// }
+.cdk-overlay-container {
+  z-index: 2000000 !important;
+  background-color: rgba($color: #262524, $alpha: 1) !important;
+}

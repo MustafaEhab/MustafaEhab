@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="138.285" height="94.08" viewBox="0 0 138.285 94.08">
+  <g id="Group_42" data-name="Group 42" transform="translate(-891.662 -564.02)">
+    <g id="Group_17" data-name="Group 17" transform="translate(661 418)">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="31.997" height="8.953" rx="4.477" transform="translate(283.775 216.322)" fill="#fff"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="31.997" height="8.953" rx="4.477" transform="translate(283.775 231.147)" fill="#fff"/>
+    </g>
+    <g id="Group_22" data-name="Group 22" transform="translate(661 418)">
+      <g id="Group_18" data-name="Group 18">
+        <path id="Path_160" data-name="Path 160" d="M281.057,191.953a18.747,18.747,0,1,1,37.495,0c0,.346-.011.69-.031,1.031a3.153,3.153,0,0,0,3.125,3.379h0a3.131,3.131,0,0,0,3.134-2.92q.047-.739.046-1.49a25.022,25.022,0,1,0-50.044,0q0,.75.046,1.49a3.131,3.131,0,0,0,3.135,2.92h0a3.153,3.153,0,0,0,3.125-3.379Q281.056,192.473,281.057,191.953Z" fill="#fea30f"/>
+        <circle id="Ellipse_6" data-name="Ellipse 6" cx="9.355" cy="9.355" r="9.355" transform="translate(290.45 146.02)" fill="#fea30f"/>
+      </g>
+      <g id="Group_21" data-name="Group 21">
+        <g id="Group_19" data-name="Group 19">
+          <path id="Path_161" data-name="Path 161" d="M323.014,196.331a18.747,18.747,0,1,1,0,37.494q-.519,0-1.031-.03a3.151,3.151,0,0,0-3.378,3.124h0a3.131,3.131,0,0,0,2.919,3.135q.74.045,1.49.046a25.022,25.022,0,1,0,0-50.044q-.75,0-1.49.046a3.131,3.131,0,0,0-2.919,3.135h0a3.151,3.151,0,0,0,3.378,3.124Q322.495,196.331,323.014,196.331Z" fill="#fea30f"/>
+          <circle id="Ellipse_7" data-name="Ellipse 7" cx="9.355" cy="9.355" r="9.355" transform="translate(350.238 205.723)" fill="#fea30f"/>
+        </g>
+        <g id="Group_20" data-name="Group 20">
+          <path id="Path_162" data-name="Path 162" d="M276.594,233.825a18.747,18.747,0,1,1,0-37.494q.519,0,1.031.03A3.151,3.151,0,0,0,281,193.237h0a3.131,3.131,0,0,0-2.92-3.135q-.74-.045-1.49-.046a25.022,25.022,0,0,0,0,50.044q.752,0,1.49-.046a3.131,3.131,0,0,0,2.92-3.135h0a3.152,3.152,0,0,0-3.379-3.124Q277.113,233.825,276.594,233.825Z" fill="#fea30f"/>
+          <circle id="Ellipse_8" data-name="Ellipse 8" cx="9.355" cy="9.355" r="9.355" transform="translate(230.662 205.723)" fill="#fea30f"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

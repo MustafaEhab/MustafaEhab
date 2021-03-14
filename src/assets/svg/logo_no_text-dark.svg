@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="147" viewBox="0 0 232 147">
+  <g id="Group_41" data-name="Group 41" transform="translate(94 -478)">
+    <g id="Group_12" data-name="Group 12" transform="translate(-278.285 213)">
+      <g id="Group_6" data-name="Group 6">
+        <rect id="Rectangle_4" data-name="Rectangle 4" width="31.997" height="8.953" rx="4.477" transform="translate(283.775 361.628)" fill="#262524"/>
+        <rect id="Rectangle_5" data-name="Rectangle 5" width="31.997" height="8.953" rx="4.477" transform="translate(283.775 376.453)" fill="#262524"/>
+      </g>
+      <g id="Group_11" data-name="Group 11">
+        <g id="Group_7" data-name="Group 7">
+          <path id="Path_79" data-name="Path 79" d="M281.057,337.259a18.747,18.747,0,1,1,37.495,0c0,.346-.011.69-.031,1.031a3.153,3.153,0,0,0,3.125,3.379h0a3.131,3.131,0,0,0,3.134-2.92q.047-.739.046-1.49a25.022,25.022,0,1,0-50.044,0q0,.75.046,1.49a3.131,3.131,0,0,0,3.135,2.92h0a3.153,3.153,0,0,0,3.125-3.379Q281.056,337.779,281.057,337.259Z" fill="#fea30f"/>
+          <circle id="Ellipse_3" data-name="Ellipse 3" cx="9.355" cy="9.355" r="9.355" transform="translate(290.45 291.327)" fill="#fea30f"/>
+        </g>
+        <g id="Group_10" data-name="Group 10">
+          <g id="Group_8" data-name="Group 8">
+            <path id="Path_80" data-name="Path 80" d="M323.014,341.637a18.747,18.747,0,1,1,0,37.494q-.519,0-1.031-.03a3.151,3.151,0,0,0-3.378,3.124h0a3.131,3.131,0,0,0,2.919,3.135q.74.045,1.49.046a25.022,25.022,0,1,0,0-50.044q-.75,0-1.49.046a3.131,3.131,0,0,0-2.919,3.135h0a3.152,3.152,0,0,0,3.378,3.125Q322.495,341.637,323.014,341.637Z" fill="#fea30f"/>
+            <circle id="Ellipse_4" data-name="Ellipse 4" cx="9.355" cy="9.355" r="9.355" transform="translate(350.238 351.029)" fill="#fea30f"/>
+          </g>
+          <g id="Group_9" data-name="Group 9">
+            <path id="Path_81" data-name="Path 81" d="M276.594,379.131a18.747,18.747,0,1,1,0-37.494q.519,0,1.031.031A3.153,3.153,0,0,0,281,338.543h0a3.131,3.131,0,0,0-2.92-3.135q-.74-.045-1.49-.046a25.022,25.022,0,0,0,0,50.044q.752,0,1.49-.046a3.131,3.131,0,0,0,2.92-3.135h0a3.151,3.151,0,0,0-3.379-3.124Q277.113,379.131,276.594,379.131Z" fill="#fea30f"/>
+            <circle id="Ellipse_5" data-name="Ellipse 5" cx="9.355" cy="9.355" r="9.355" transform="translate(230.662 351.029)" fill="#fea30f"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="232" height="147" transform="translate(-94 478)" fill="none"/>
+  </g>
+</svg>

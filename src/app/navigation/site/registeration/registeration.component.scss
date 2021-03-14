@@ -1,0 +1,42 @@
+*::-webkit-scrollbar {
+  width: 15px;
+}
+*::-webkit-scrollbar-track {
+  background: rgba($color: #000, $alpha: 0.2);
+  border-radius: 10px;
+  opacity: 0.5;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #262524;
+  border-radius: 20px;
+  border: 2px solid #000;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+// ::ng-deep .example-full-width {
+//   width: 90% !important;
+// }
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #fea30f !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #262524 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #fea30f !important;
+}
+span {
+  font-size: 17px;
+}
+.bank {
+  color: #fea30f;
+  font-weight: 700;
+}

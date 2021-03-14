@@ -1,0 +1,198 @@
+.schedule-container {
+  background-image: url(../../../../assets/imgs/bg-circles.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: initial;
+}
+.title {
+  color: #262524;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba($color: #000, $alpha: 1);
+}
+.title h1 {
+  font-size: xx-large;
+}
+.divider-img {
+  max-width: 50px !important;
+  width: 50px;
+}
+.divider-img img {
+  position: relative;
+  width: 50px;
+}
+.left-border {
+  height: 3px;
+  background-color: #fea30f;
+  color: transparent;
+  border-radius: 5px;
+}
+.day-two-row {
+  direction: rtl;
+}
+.bg-date {
+  background-color: rgba($color: #262524, $alpha: 0.9);
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 0px 0px rgba($color: #262524, $alpha: 1);
+  text-align: center;
+  text-justify: center;
+  justify-content: center;
+  justify-items: center;
+}
+.bg-date-two {
+  //   background-color: rgba($color: #262524, $alpha: 0.9);
+  background-image: linear-gradient(
+    -45deg,
+    rgba($color: #262524, $alpha: 0.2),
+    rgba($color: #fff, $alpha: 0.5),
+    rgba($color: #262524, $alpha: 0.2)
+  );
+  color: #262524;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 0px rgba($color: #262524, $alpha: 1);
+  text-align: center;
+  text-justify: center;
+  justify-content: center;
+  justify-items: center;
+}
+.bg-date-three {
+  background-image: linear-gradient(
+    -45deg,
+    rgba($color: #fea30f, $alpha: 0.9),
+    rgba($color: #262524, $alpha: 0.8)
+  );
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 0px 0px rgba($color: #262524, $alpha: 1);
+  text-align: center;
+  text-justify: center;
+  justify-content: center;
+  justify-items: center;
+}
+.date {
+  color: #fea30f;
+  text-shadow: 2px 2px 4px rgba($color: #000, $alpha: 0.6);
+  font-weight: 700;
+  font-size: 4.5vh;
+  line-height: 1.2;
+}
+.date small {
+  color: #fff;
+}
+.date-two {
+  color: #262524;
+  text-shadow: 2px 2px 4px rgba($color: #000, $alpha: 0.6);
+  font-weight: 700;
+  font-size: 4.5vh;
+  line-height: 1.2;
+}
+.date-two small {
+  color: #fea30f;
+}
+.date-three {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba($color: #000, $alpha: 0.6);
+  font-weight: 700;
+  font-size: 4.5vh;
+  line-height: 1.2;
+}
+.date-three small {
+  color: #262524;
+}
+.sc-title {
+  color: #fea30f;
+  font-weight: 700;
+}
+.sc-two-title {
+  color: #fff;
+  font-weight: 700;
+}
+.sc-three-title {
+  color: #fea30f;
+  font-weight: 700;
+}
+.text-two-muted {
+  color: #555;
+}
+.text-three-muted {
+  color: #444;
+}
+.firts-day-scedule {
+  background-image: linear-gradient(
+    -45deg,
+    rgba($color: #262524, $alpha: 0.5),
+    rgba($color: #fff, $alpha: 0.5)
+  );
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 3px 6px rgba($color: #262524, $alpha: 1);
+  color: #262524;
+}
+.second-day-scedule {
+  direction: ltr;
+  background-image: linear-gradient(
+    45deg,
+    rgba($color: #fea30f, $alpha: 0.9),
+    rgba($color: #262524, $alpha: 0.5)
+  );
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: -3px 3px 6px rgba($color: #262524, $alpha: 1);
+}
+.third-day-scedule {
+  background-image: linear-gradient(
+    135deg,
+    rgba($color: #262524, $alpha: 0.9),
+    rgba($color: #ccc, $alpha: 0.3),
+    rgba($color: #262524, $alpha: 0.9)
+  );
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 3px 6px rgba($color: #262524, $alpha: 1);
+  color: #262524;
+}
+@media screen and (max-width: 768px) {
+  .bg-date {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  .bg-date-two {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .bg-date-three {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .firts-day-scedule {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .second-day-scedule {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .third-day-scedule {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+h3 {
+  // font-weight: 600;
+  font-size: x-large;
+}
