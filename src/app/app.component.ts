@@ -6,6 +6,6 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = '4th conference';
+  title = '4th IAAH MENA REGION CONFERENCE ADOLESCENTt HEALTH';
 
 }
