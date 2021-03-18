@@ -1,34 +1,99 @@
 <div class="position-relative">
     <div class="w-100 h-100 p-0 m-0 position-relative d-flex carousel-holder">
-        <mdb-carousel class=" carousel slide carousel-fade" [animation]="'fade'" [interval]="2500" [noPause]="true">
+        <mdb-carousel class=" carousel slide " [animation]="'slide'" [interval]="3500" [noPause]="true">
             <mdb-carousel-item>
                 <div class="view w-100">
-                    <img class="d-block w-100" src="../../../../assets/imgs/60_3.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="../../../../assets/imgs/theme-logo.png" alt="Third slide">
                     <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
                 </div>
             </mdb-carousel-item>
             <mdb-carousel-item>
                 <div class="view w-100">
-                    <img class="d-block w-100" src="../../../../assets/imgs/60_1.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="../../../../assets/imgs/hurgarda.jpg" alt="Third slide">
                     <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+                </div>
+                <div class="carousel-caption">
+                    <div
+                        class="mx-auto my-auto venue-main-holder text-center py-3 animate__animated animate__slideInDown">
+                        <h1 class="time-header">
+                            4<small class="symbol">th</small> IAAH MENA REGION
+                            <br>
+                            <small><small>
+                                    ADOLESCENT HEALTH CONFERENCE
+                                </small>
+                            </small>
+                        </h1>
+                        <h2 class="con-name h2-responsive">
+                            Adolescent care, Leaving no one behind
+                        </h2>
+                        <h4 class="venue">
+                            <span class="position-relative ml-3">
+                                {{ conferenceDate | date}}
+                            </span>
+                            <span class="position-relative ml-3">
+                                Hurghada, Red Sea
+                            </span>
+                            <Span class="position-relative ml-3">
+                                Egypt
+                            </Span>
+                        </h4>
+                    </div>
                 </div>
             </mdb-carousel-item>
             <mdb-carousel-item>
                 <div class="view w-100">
-                    <img class="d-block w-100" src="../../../../assets/imgs/60_4.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="../../../../assets/imgs/chairs.png" alt="Third slide">
                     <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
                 </div>
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-                <div class="view w-100">
-                    <img class="d-block w-100" src="../../../../assets/imgs/60_5.jpg" alt="Third slide">
-                    <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-                </div>
+                <div class="carousel-caption">
+                    <div
+                        class="mx-auto my-auto timer-main-holder text-center pt-3 pb-1 animate__animated animate__slideInDown">
+                        <h1 class="time-header">
+                            4<small class="symbol">th</small> IAAH MENA REGION
+                            <br>
+                            <small><small>
+                                    ADOLESCENT HEALTH CONFERENCE
+                                </small>
+                            </small>
+                        </h1>
+                        <h2 class="con-name h2-responsive">
+                            Adolescent care, Leaving no one behind
+                        </h2>
+                        <p class="start-in">
+                            Strats In :
+                        </p>
+                        <h1 class="pb-0 mb-0 timer">
+                            <span class="d-inline-block ">
+                                <span class="d-block py-0 my-0 pl-3">
+                                    <span id="days"></span>
+                                    <span class="time-divider">:</span>
+                                </span>
+                                <small class="d-block my-0">Days</small>
+                            </span>
+                            <span class="d-inline-block ">
+                                <span class="d-block py-0 my-0 pl-3">
+                                    <span id="hours"></span>
+                                    <span class="time-divider">:</span>
+                                </span>
 
+                                <small class="d-block my-0">Hours</small>
+                            </span>
+                            <span class="d-inline-block ">
+                                <span class="d-block py-0 my-0 pl-3">
+                                    <span id="mins"></span>
+                                </span>
+                                <small class="d-block  my-0">Minutes</small>
+                            </span>
+                        </h1>
+                        <h2>
+                            <span id="end" class=" pb-0 mb-0 timer"></span>
+                        </h2>
+                    </div>
+                </div>
             </mdb-carousel-item>
         </mdb-carousel>
     </div>
-    <div class="w-100 h-100 position-absolute overlay">
+    <!-- <div class="w-100 h-100 position-absolute overlay">
         <div class="w-100 h-100 d-flex pt-2">
             <div class="p-0 mx-auto my-auto timer-main-holder text-center py-3" data-aos="fade-up">
                 <h1 class="time-header">
@@ -72,29 +137,16 @@
                     <span class="d-inline-block pt-3 ">
                         <span class="d-block py-0 my-0 pl-3">
                             <span id="mins"></span>
-                            <span class="time-divider">:</span>
+                            < </span>
+                                <small class="d-block pt-2 my-0">Minutes</small>
                         </span>
-                        <small class="d-block pt-2 my-0">Minutes</small>
-                    </span>
-                    <span class="d-inline-block pt-3 ">
-                        <span class="d-block py-0 my-0 pl-3">
-                            <span id="secs"></span>
-                        </span>
-                        <small class="d-block pt-2 my-0">Seconds</small>
-                    </span>
+
                 </h1>
                 <h1>
                     <span id="end"></span>
                 </h1>
                 <h2 id="end" class="pt-2 pb-0 mb-0 timer"></h2>
-                <!-- <small class="pt-0 mt-0" style="color: #fea30f"> -->
-
-                <!-- <span class="pt-0 pl-3 pr-3"></span> -->
-                <!-- <span class="pt-0 pl-3 pr-3"></span> -->
-                <!-- <span class="pt-0 pl-3"></span> -->
-                <!-- </small> -->
-                <!-- <countdown [text]="text" units="Year | Month | Days | Hours | Minutes | Seconds" end="July 22, 2019"></countdown> -->
             </div>
         </div>
-    </div>
+    </div> -->
 </div>

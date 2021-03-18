@@ -1,8 +1,119 @@
-<div class="w-100 h-100 px-0 pt-4 pb-0 m-0">
-    <div class="speakers-specs py-5">
+<div class="w-100 h-100 p-0 m-0">
+    <div class="row p-0 m-0">
+        <div class="col col-md-6 p-0 m-0 p-0">
+            <div class="w-100 h-100 speakers-specs px-5 py-5">
+                <div class="pl-3 pr-1 pt-3">
+                    <h1 class="text-uppercase title">
+                        Conference Ambassadors
+                    </h1>
+                    <ul class="list-unstyled">
+                        <li class="position-relative pl-3 pb-2" *ngFor="let ambassador of ambassadors">
+                            <h2 class="commitee">
+                                <span class="d-block py-0 my-0">
+                                    {{ambassador.name}}
+                                </span>
+                                <small class="d-block py-0 my-0">
+                                    {{ambassador.title}}
+                                </small>
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pl-3 pr-1 pt-2">
+                    <h1 class="text-uppercase title">
+                        Scientific Committee
+                    </h1>
+                    <h2 class="sub-title">
+                        Chairpersons :
+                    </h2>
+                    <ul class="list-unstyled">
+                        <li class="position-relative pl-3 pb-2" *ngFor="let scientifi of scientific">
+                            <h2 class="commitee">
+                                <span class="py-0 my-0">
+                                    {{scientifi.name}}
+                                </span>
+                                <small class="py-0 my-0">
+                                    {{scientifi.country}}
+                                </small>
+                            </h2>
+                        </li>
+                    </ul>
+                    <h2 class="sub-title">
+                        Members :
+                    </h2>
+                    <ul class="list-unstyled pt-3 pl-2">
+                        <li class="position-relative pl-3 pb-2" *ngFor="let member of scientificmembers">
+                            <h2 class="members">
+                                <span class="py-0 my-0">
+                                    {{member.name}}
+                                </span>
+                                <small class="py-0 my-0">
+                                    {{member.country}}
+                                </small>
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-6 p-0 m-0 p-0">
+            <div class="w-100 h-100  px-5 py-5 committe-specs">
+                <div class="pl-3 pr-1 pt-3">
+                    <h1 class="text-uppercase title2">
+                        Safety and Wellness Committee
+                    </h1>
+                    <ul class="list-unstyled">
+                        <li class="position-relative pl-3 pb-2" *ngFor="let safet of safety">
+                            <h2 class="commitee">
+                                <span class="d-block py-0 my-0">
+                                    {{safet.name}}
+                                </span>
+                                <small class="d-block py-0 my-0">
+                                    {{safet.title}}
+                                </small>
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pl-3 pr-1 pt-2">
+                    <h1 class="text-uppercase title2">
+                        Organizing Committee
+                    </h1>
+                    <h2 class="sub-title">
+                        Chairperson:
+                    </h2>
+                    <ul class="list-unstyled">
+                        <li class="position-relative pl-3 pb-2">
+                            <h2 class="members">
+                                <span class="py-0 my-0">
+                                    Prof. Dr. Ghada Anwar
+                                </span>
+                                <small class="py-0 my-0">
+                                    (Egypt)
+                                </small>
+                            </h2>
+                        </li>
+                    </ul>
+                    <h2 class="sub-title">
+                        Members :
+                    </h2>
+                    <ul class="list-unstyled pt-3 pl-2">
+                        <li class="position-relative pl-3 pb-2" *ngFor="let member of organizing">
+                            <h2 class="members">
+                                <span class="py-0 my-0">
+                                    {{member.name}}
+                                </span>
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class=" py-5">
         <div class="container  text-center py-5 text-uppercase">
-            <h1 class="title" data-aos="zoom-in-up">
-                Meet Our Speakers
+            <h1 class="title text-uppercase" data-aos="zoom-in-up">
+                CONFERENCE COMMITTEES
             </h1>
             <div class="row justify-content-center align-items-center align-content-center">
                 <div class="col-1 left-border mx-0">
@@ -21,8 +132,8 @@
                 </h3>
             </div>
         </div>
-    </div>
-    <div class="row w-100 p-0 m-0">
+    </div> -->
+    <!-- <div class="row w-100 p-0 m-0">
         <div class="col-lg-3 col-md-4 col-sm-6 p-0 m-0" data-aos="fade-up-left">
             <div class="w-100 h-100 p-0 m-0 ">
                 <div>
@@ -91,5 +202,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>

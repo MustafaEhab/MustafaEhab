@@ -1,5 +1,5 @@
 <div class="contact-container py-0 px-0 m-0 text-center w-100 h-100 justify-content-center">
-    <div class="w-100 h-100 pt-5 px-0 mx-0 justify-content-center">
+    <div class="w-100 h-100 py-5 px-0 mx-0 justify-content-center">
         <div class="pt-5 pb-5 m-0">
             <h1 class="title text-uppercase" data-aos="zoom-in-up">
                 General Info
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <div class="container pb-4" data-aos="fade-right">
+        <div class="contain pb-4 mx-auto" data-aos="fade-right">
             <mat-tab-group dynamicHeight mat-align-tabs="center">
                 <mat-tab label="VENUE & DATE">
                     <div class="pt-4 pb-5 px-5 text-left">
@@ -60,6 +60,118 @@
                                 {{endDate | date : 'long'}}
                             </span>
                         </h3>
+                    </div>
+                </mat-tab>
+                <mat-tab label="CURRENCY & LANGUAGE">
+                    <div class="pt-4 pb-5 px-5 text-left">
+                        <h1 class="text-warning pb-0">
+                            Currency :
+                        </h1>
+                        <h3 class="px-3">
+                            <span>
+                                The Egyptian pound (LE) is the official currency. One US$ is currently around LE 15.60.
+                                You can exchange money in any
+                                bank or money exchange. The exchange rate in hotels is more expensive. Please avoid
+                                personal transactions.
+                            </span>
+                        </h3>
+                        <h1 class="text-warning pb-0 mb-2">
+                            Language :
+                        </h1>
+                        <h3 class="px-3">
+                            <span>
+                                All sessions and publications will be in English. There will be no translation. You will
+                                have no problem in
+                                communicating with people in Egypt, many can speak English and some speak French while
+                                the rest can still communicate
+                                somehow!
+                            </span>
+                        </h3>
+                    </div>
+                </mat-tab>
+                <mat-tab label="VISA & TRAVEL">
+                    <div class="pt-4 pb-5 px-5 text-left">
+                        <h1 class="text-warning pb-0">
+                            Visa :
+                        </h1>
+                        <h3 class="text-dark">
+                            It is always easy to get an online entry visa to Egypt. Few countries are exempted from
+                            getting an entry visa and others
+                            can get it upon arrival. However, the visa regulations change frequently. Please consult the
+                            Egyptian consulate in your
+                            country about visa requirements. You can also visit the Ministry of Foreign Affairs site at
+                            www.mfa.gov.eg then go to
+                            Consular Services section.
+                        </h3>
+                        <h1 class="text-warning pb-0 mb-2">
+                            Travel :
+                        </h1>
+                        <h3 class="text-dark pb-0" style="font-weight: 500;">
+                            Hurghada International airport is the second largest airport in Egypt. It receives direct
+                            flights from almost all
+                            European countries, Turkey, Jordan, Saudi Arabia and Kenya. There are some direct flights
+                            from Dubai also as well as so
+                            many others with a short stop in Cairo at very competitive prices.
+                            The other alternative is taking a flight to Cairo airport and then a connecting flight to
+                            Hurghada. Usually there are
+                            more than 5 flights daily from Cairo Airport to Hurghada which will ensure short waiting
+                            period for a connecting flight.
+                            Egypt Air has regular flights from many destinations around the world.
+                            Upon reaching Hurghada International Airport you need to take a taxi to the resort, it is
+                            about 15 minutes ride and
+                            costs about $ 8 – 10. Please negotiate the price at the beginning of the ride, remember that
+                            bargaining is fun in Egypt.
+                            Reaching Hurghada from Cairo by road is another alternative. The distance is about 400
+                            kilometers. There are regular bus
+                            service that has 3-5 trips a day and takes about 6 hours. The organizing committee will be
+                            arranging a bus service on
+                            December 6th and another one on December 7th at 9 am from central location in Cairo to
+                            Hurghada and the fare will be
+                            announced later. Return trips will be organized on December 10th from Hurghada.
+                        </h3>
+                    </div>
+                </mat-tab>
+                <mat-tab label="INVITATION LETTERS">
+                    <div class="pt-4 pb-5 px-5 text-left">
+                        <p class="text-dark pb-0">
+                            The organizing committee will issue a letter of invitation upon request and
+                            after receipt of registration fees.
+                        </p>
+                    </div>
+                </mat-tab>
+                <mat-tab label="DRESS & WEATHER">
+                    <div class="pt-4 pb-5 px-5 text-left">
+                        <h1 class="text-warning pb-0">
+                            Dress :
+                        </h1>
+                        <h3 class="py-0">
+                            Usually casual but you would probably need a jacket for the opening ceremony,
+                            not for formality but because of the
+                            weather at night.
+                        </h3>
+                        <h1 class="text-warning pb-0">
+                            Weather :
+                        </h1>
+                        <h3 class="py-0">
+                            The weather is usually pleasant in Hurghada during the first half of December.
+                            Average day temperature is 20 degrees
+                            centigrade and 17 degrees for the evening. Water temperature is said to be 24,
+                            so you might risk believe this and swim.
+                            It is usually sunny and dry and there is no need to bring your umbrella
+                        </h3>
+                    </div>
+                </mat-tab>
+                <mat-tab label="CANCELLATION POLICY">
+                    <div class="pt-4 pb-5 px-5 text-left">
+                        <p class="text-dark pb-0">
+                            All refunds will incur a 20% handling fee. No refunds will be made after October
+                            31st, 2021. However, another delegate
+                            may be nominated as a replacement, up to two weeks before the conference.
+                            Cancellation must be in writing (by letter,
+                            fax or email) to the Congress Secretariat. All refunds will be made after the
+                            conference. Participants should state the
+                            bank details to which refunds should be made.
+                        </p>
                     </div>
                 </mat-tab>
                 <mat-tab label="ACCOMMODATION">
@@ -115,87 +227,23 @@
                                 الضرائب
                             </h3>
                         </div>
+                        <div class="w-100 d-flex pt-4">
+                            <button class="btn btn-warning px-3 py-2 mx-auto" style="font-weight: 600;"
+                                (click)="openDialog()">
+                                Make a Reservation
+                            </button>
+                        </div>
                     </div>
                 </mat-tab>
-                <mat-tab label="DRESS & WEATHER">
-                    <div class="pt-4 pb-5 px-5 text-left">
-                        <h1 class="text-warning pb-0">
-                            Dress :
-                        </h1>
-                        <h3 class="py-0">
-                            Usually casual but you would probably need a jacket for the opening ceremony,
-                            not for formality but because of the
-                            weather at night.
-                        </h3>
-                        <h1 class="text-warning pb-0">
-                            Weather :
-                        </h1>
-                        <h3 class="py-0">
-                            The weather is usually pleasant in Hurghada during the first half of December.
-                            Average day temperature is 20 degrees
-                            centigrade and 17 degrees for the evening. Water temperature is said to be 24,
-                            so you might risk believe this and swim.
-                            It is usually sunny and dry and there is no need to bring your umbrella
-                        </h3>
-                    </div>
-                </mat-tab>
-                <mat-tab label="INVITATION LETTERS">
-                    <div class="pt-4 pb-5 px-5 text-left">
-                        <p class="text-dark pb-0">
-                            The organizing committee will issue a letter of invitation upon request and
-                            after receipt of registration fees.
-                        </p>
-                    </div>
-                </mat-tab>
-                <mat-tab label="CANCELLATION POLICY">
-                    <div class="pt-4 pb-5 px-5 text-left">
-                        <p class="text-dark pb-0">
-                            All refunds will incur a 20% handling fee. No refunds will be made after October
-                            31st, 2021. However, another delegate
-                            may be nominated as a replacement, up to two weeks before the conference.
-                            Cancellation must be in writing (by letter,
-                            fax or email) to the Congress Secretariat. All refunds will be made after the
-                            conference. Participants should state the
-                            bank details to which refunds should be made.
-                        </p>
-                    </div>
-                </mat-tab>
+
             </mat-tab-group>
         </div>
-        <!-- <ul ngbNav #nav="ngbNav" class="nav-tabs mt-3 mx-auto">
-                        <li ngbNavItem>
-                            <a ngbNavLink class="text-uppercase">VENUE & Date</a>
-                            <ng-template ngbNavContent>
-                                
-                            </ng-template>
-                        </li>
-                        <li ngbNavItem>
-                            <a ngbNavLink>ACCOMMODATION</a>
-                            <ng-template ngbNavContent>
-                                
-                            </ng-template>
-                        </li>
-                        <li ngbNavItem>
-                            <a ngbNavLink>DRESS & WEATHER</a>
-                            <ng-template ngbNavContent>
-                                
-                            </ng-template>
-                        </li>
-                        <li ngbNavItem>
-                            <a ngbNavLink class="text-uppercase">Cancellation Policy</a>
-                            <ng-template ngbNavContent>
-                             
-                            </ng-template>
-                        </li>
-                    </ul>
-                    <div [ngbNavOutlet]="nav" class="outlet text-left pt-4 pb-4 px-4 mx-0 w-100">
-                    </div> -->
     </div>
-    <div class="px-0 mx-0">
+    <!-- <div class="px-0 mx-0">
         <div class="p-0 m-0 w-100" data-aos="fade-left">
             <agm-map [latitude]="lat" [longitude]="lng">
                 <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
             </agm-map>
         </div>
-    </div>
+    </div> -->
 </div>

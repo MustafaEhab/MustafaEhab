@@ -14,41 +14,72 @@
   height: 17px !important;
   background-color: #fea30f;
 }
-::ng-deep .carousel .carousel-control-next-icon,
-::ng-deep .carousel .carousel-control-prev-icon {
-  display: none !important;
-  visibility: hidden !important;
+.carousel-caption {
+  // background-color: rgba($color: #0000, $alpha: 0.9);
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  top: 30%;
 }
-.overlay {
-  z-index: 99;
+.rgba-black-slight {
   top: 0;
   left: 0;
-  background-color: rgba($color: #262524, $alpha: 0.6);
+  // background-color: rgba($color: #262524, $alpha: 0.3);
   color: #fff;
 }
-.timer-main-holder {
-  width: 60%;
-  height: 60%;
+.animate__animated.animate__slideInUp {
+  // --animate-duration: 800ms;
+  --animate-delay: 1.2s !important;
+}
+.wel-copation {
+  color: #fff;
+  font-size: 5vw;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.venue-main-holder {
+  width: 65%;
   background-color: rgba($color: #262524, $alpha: 0.5);
   border-radius: 20px;
   color: #fff;
-  box-shadow: 2px 2px 5px rgba($color: #aaa, $alpha: 0.4);
-  line-height: 1.8;
 }
+.timer-main-holder {
+  width: 65%;
+  background-color: rgba($color: #262524, $alpha: 0.5);
+  border-radius: 20px;
+  color: #fff;
+}
+
 .time-header {
   font-size: 3.5vw;
   line-height: 1.1;
+  text-shadow: 2px 2px 3px rgba($color: #000, $alpha: 0.4);
 }
 .time-header:first-letter {
   color: #fea30f;
   font-size: 5vw;
+  line-height: 1.1;
 }
 .symbol {
   vertical-align: text-top;
 }
+.con-name {
+  color: #fea30f;
+  font-size: 2vw;
+  font-weight: bold;
+  line-height: 1.1;
+  text-shadow: 2px 2px 3px rgba($color: #000, $alpha: 0.4);
+}
+.venue {
+  font-size: 2.3vw;
+  text-shadow: 2px 2px 3px rgba($color: #000, $alpha: 0.4);
+  line-height: 1.1;
+}
 .venue-date {
   font-size: 2.3vw;
 }
+.venue span:before,
 .venue-date span:before {
   position: absolute;
   content: "";
@@ -65,6 +96,7 @@
 .timer {
   font-size: 4vw;
   color: #fea30f;
+  line-height: 1.1;
 }
 .timer span {
   color: #eee;
@@ -81,18 +113,6 @@
   ::ng-deep .carousel {
     height: auto !important;
   }
-  .start-in {
-    padding-top: 0;
-    padding-bottom: 2%;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .venue-date {
-    padding-top: 2%;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 }
 @media screen and (max-width: 700px) {
   ::ng-deep .carousel .carousel-indicators {
@@ -101,6 +121,48 @@
   }
   .timer-main-holder {
     width: 80%;
-    margin-top: 20% !important;
+  }
+  .venue-main-holder {
+    width: 80%;
+  }
+  .timer-main-holder .start-in {
+    margin: 0px;
+    padding-bottom: 2px;
+  }
+  .timer-main-holder .con-name {
+    margin: 0px 0px 5px;
+  }
+  .timer-main-holder .timer {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin: 0px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel {
+    margin-top: 70px;
+  }
+  .carousel-caption {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    bottom: 0 !important;
+    top: 20% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .timer-main-holder {
+    width: 85%;
+  }
+  .venue-main-holder {
+    width: 85%;
+  }
+  .timer-main-holder .con-name {
+    margin: 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .carousel-caption {
+    top: 10% !important;
   }
 }

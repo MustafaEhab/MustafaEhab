@@ -55,7 +55,6 @@ export class TicketsComponent implements OnInit {
       panelClass: 'my-dialog-class',
       data: this.viewedItem,
     });
-
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
@@ -141,4 +140,24 @@ export class TicketsComponent implements OnInit {
       currency: "EGP"
     },
   ];
+  packge = [
+    {
+      title: "Admission to the scientific sessions and the exhibition area"
+    },
+    {
+      title: "Invitation to the opening ceremony"
+    },
+    {
+      title: "Abstract book on a USB flash drive"
+    },
+    {
+      title: "Final program"
+    },
+    {
+      title: "Certificate of attendance"
+    },
+    {
+      title: "Accompanying persons are welcome to the opening ceremony and the social event."
+    },
+  ]
 }

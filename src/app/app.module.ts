@@ -26,6 +26,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { ContactComponent } from './navigation/site/contact/contact.component';
 import { AgmCoreModule } from '@agm/core';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { WelcomeComponent } from './navigation/site/welcome/welcome.component';
+import { CallUsComponent } from './navigation/site/call-us/call-us.component';
+import { AccommodationRegisterationComponent } from './navigation/site/accommodation-registeration/accommodation-registeration.component';
 
 library.add(fas, far, fab);
 @NgModule({
@@ -41,6 +44,9 @@ library.add(fas, far, fab);
     SponsorsComponent,
     ContactComponent,
     FooterComponent,
+    WelcomeComponent,
+    CallUsComponent,
+    AccommodationRegisterationComponent,
   ],
   imports: [
     BrowserModule,

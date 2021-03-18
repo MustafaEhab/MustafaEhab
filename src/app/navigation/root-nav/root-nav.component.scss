@@ -1,3 +1,6 @@
+.container {
+  max-width: 90% !important;
+}
 a.active,
 a:hover,
 a:focus,
@@ -39,8 +42,8 @@ a:active {
   transform: scaleX(1) !important;
 }
 .bg-transparent {
-  // background-color: rgba($color: #262524, $alpha: 0.6) !important;
-  // box-shadow: 2px 0px 5px rgba($color: #aaa, $alpha: 0.4);
+  background-color: rgba($color: #262524, $alpha: 0.6) !important;
+  box-shadow: 2px 0px 5px rgba($color: #aaa, $alpha: 0.4);
   height: 100px;
   transition: 0.25s height;
 }
@@ -64,8 +67,8 @@ a:active {
   );
   border: 1.5px solid #fea30f;
   height: 50px;
-  padding-right: 20px !important;
-  padding-left: 50px !important;
+  padding-right: 10px !important;
+  padding-left: 65px !important;
   border-radius: 5px;
   color: #fff !important;
 }
@@ -93,6 +96,9 @@ a:active {
   left: 0;
 }
 @media screen and (max-width: 992px) {
+  // .contain {
+  //   display: block;
+  // }
   .nav-link:hover:after,
   .nav-link.active:after,
   .nav-link:focus:after,
@@ -113,9 +119,7 @@ a:active {
   .navbar-collapse {
     background-color: rgba($color: #262524, $alpha: 1) !important;
     box-shadow: 0px 0px 0px rgba($color: #aaa, $alpha: 0.4);
-    // height: auto;
     padding: 20px 20px;
-    // border-radius: 20px;
   }
   .scrolledNav {
     background-color: rgba($color: #262524, $alpha: 1) !important;

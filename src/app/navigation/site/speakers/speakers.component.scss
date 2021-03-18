@@ -1,8 +1,8 @@
 .speakers-specs {
   background-image: linear-gradient(
       45deg,
-      rgba($color: #262524, $alpha: 0.8),
-      rgba($color: #262524, $alpha: 0.8)
+      rgba($color: #262524, $alpha: 0.89),
+      rgba($color: #262524, $alpha: 0.89)
     ),
     url(../../../../assets/imgs/mic.jpg);
   background-position: center;
@@ -10,25 +10,107 @@
   background-size: cover;
   background-attachment: initial;
 }
+.committe-specs {
+  background-image: linear-gradient(
+    45deg,
+    rgba($color: #ddd, $alpha: 0.4),
+    rgba($color: #262524, $alpha: 0.4)
+  );
+  background-position: center;
+  font-weight: bolder;
+}
 .title {
-  color: #fea30f;
+  position: relative;
+  color: #fff;
   font-weight: 600;
   text-shadow: 2px 2px 5px rgba($color: #000, $alpha: 1);
-  font-size: xx-large;
+  font-size: x-large;
 }
-.divider-img {
-  max-width: 50px !important;
-  width: 50px;
-}
-.divider-img img {
+.sub-title {
   position: relative;
-  width: 50px;
+  color: #ccc;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba($color: #000, $alpha: 1);
+  font-size: x-large;
 }
-.left-border {
-  height: 3px;
-  background-color: #262524;
-  color: transparent;
-  border-radius: 5px;
+.sub-title:before {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 2.5px;
+  background-color: #fea30f;
+  left: 1%;
+  top: 120%;
+  // bottom: 0;
+  box-shadow: 2px 2px 5px rgba($color: #000, $alpha: 0.6);
+}
+.title2:before,
+.title:before {
+  position: absolute;
+  content: "";
+  width: 2.5px;
+  height: 70%;
+  background-color: #fea30f;
+  left: -15px;
+  top: 15%;
+  bottom: 15%;
+  box-shadow: 2px 2px 5px rgba($color: #000, $alpha: 0.6);
+}
+.title2 {
+  position: relative;
+  color: #262524;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba($color: #000, $alpha: 0.3);
+  font-size: x-large;
+}
+ul li h2 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+}
+ul li:before {
+  position: absolute;
+  content: "•";
+  color: #fea30f;
+  font-size: x-large;
+  left: 0px;
+  top: 4px;
+  bottom: 0;
+}
+.commitee span {
+  color: #fea30f;
+}
+.members span {
+  color: #ccc;
+}
+.members small {
+  color: #fea30f;
+}
+.commitee small {
+  color: #bbb;
+}
+.committe-specs .commitee span {
+  color: #e79101;
+  font-weight: 600;
+}
+.committe-specs .commitee small {
+  color: #444;
+  font-weight: 600;
+}
+.committe-specs .members span {
+  color: #444;
+  font-weight: 600;
+}
+.committe-specs .members small {
+  color: #e79101;
+  font-weight: 600;
+}
+.committe-specs .sub-title {
+  position: relative;
+  color: #444;
+  font-weight: 600;
+  text-shadow: 0px 0px 0px rgba($color: #000, $alpha: 1);
+  font-size: x-large;
 }
 .speakers-desc {
   color: #eee;
@@ -44,9 +126,9 @@
   color: #fff;
   border-radius: 20px;
 }
-.speaker-img-overlay p {
-  color: #fea30f;
-}
-.speaker-img-overlay h3 {
-  font-size: 1.7vw;
-}
+// .speaker-img-overlay p {
+//   color: #fea30f;
+// }
+// .speaker-img-overlay h3 {
+//   font-size: 1.7vw;
+// }

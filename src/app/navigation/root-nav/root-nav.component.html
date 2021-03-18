@@ -1,7 +1,7 @@
 <!-- <div class="p-0 m-0 w-100 h-100 main-container" #navbarContainer id="navbarContainer" (scroll)="divScroll($event)"> -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-2 bg-transparent justify-content-center" #navbar
     id="navbar">
-    <div class="container justify-content-between nav-holder">
+    <div class="container mx-auto justify-content-between nav-holder">
         <a class="navbar-brand p-0" href="#">
             <img src="../../../assets/svg/logo_part_text.svg" alt="" class="logo">
         </a>
@@ -9,14 +9,17 @@
             data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="color: #fea30f;"></span>
         </button>
-
         <div class="collapse navbar-collapse w-100 justify-content-end" id="navbarNav"
             [ngbCollapse]="isNavbarCollapsed">
             <ul class="navbar-nav d-flex navigation my-auto" role="navigation">
                 <li class="nav-item position-relative px-2">
                     <a du-smooth-scroll du-scrollspy class="nav-link active" href="#home">
                         Home
-                        <!-- <span class="sr-only">(current)</span> -->
+                    </a>
+                </li>
+                <li class="nav-item position-relative px-2">
+                    <a du-smooth-scroll du-scrollspy class="nav-link" href="#welcome">
+                        Welcome
                     </a>
                 </li>
                 <li class="nav-item position-relative px-2">
@@ -25,27 +28,33 @@
                     </a>
                 </li>
                 <li class="nav-item position-relative px-2">
-                    <a du-smooth-scroll du-scrollspy class="nav-link" href="#schedule">
-                        Schedule
-                    </a>
-                </li>
-                <li class="nav-item position-relative px-2">
                     <a du-smooth-scroll du-scrollspy class="nav-link" href="#speakers">
-                        Speakers
+                        Committees
                     </a>
-                </li>
-                <li class="nav-item position-relative px-0 mx-0 ticket-item">
-                    <a du-smooth-scroll du-scrollspy class="nav-link ticket-link py-3" href="#tickets">
-                        Buy Ticket
-                        <!-- <i class="fa fa-angle-down text-white" aria-hidden="true"></i> -->
-                    </a>
-
                 </li>
                 <li class="nav-item position-relative px-2">
                     <a du-smooth-scroll du-scrollspy class="nav-link" href="#contact">
                         General Info
                     </a>
                 </li>
+                <li class="nav-item position-relative px-2">
+                    <a du-smooth-scroll du-scrollspy class="nav-link" href="#schedule">
+                        SCIENTIFIC PROGRAM
+                    </a>
+                </li>
+                <li class="nav-item position-relative px-2">
+                    <a du-smooth-scroll du-scrollspy class="nav-link" href="#call">
+                        Call Us
+                    </a>
+                </li>
+                <li class="nav-item position-relative px-0 mx-0 ticket-item">
+                    <a du-smooth-scroll du-scrollspy class="nav-link ticket-link py-3" href="#tickets">
+                        REGISTRATION
+                        <!-- <i class="fa fa-angle-down text-white" aria-hidden="true"></i> -->
+                    </a>
+
+                </li>
+
             </ul>
         </div>
     </div>

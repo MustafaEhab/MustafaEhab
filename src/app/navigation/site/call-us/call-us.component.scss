@@ -1,0 +1,56 @@
+.contact-container {
+  background-image: url(../../../../assets/imgs/bg-circles.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: initial;
+}
+.title {
+  color: #fea30f;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba($color: #000, $alpha: 1);
+  font-size: xx-large;
+}
+.divider-img {
+  max-width: 50px !important;
+  width: 50px;
+}
+.divider-img img {
+  position: relative;
+  width: 50px;
+}
+.left-border {
+  height: 3px;
+  background-color: #262524;
+  color: transparent;
+  border-radius: 5px;
+}
+.commitee span {
+  color: #e79101;
+  font-weight: 600;
+}
+.commitee small {
+  color: #333;
+  font-weight: 600;
+}
+.sub-title {
+  position: relative;
+  color: #e79101;
+  font-weight: 600;
+  text-shadow: 0px 0px 0px rgba($color: #000, $alpha: 1);
+  font-size: x-large;
+}
+ul li h2 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+}
+ul li:before {
+  position: absolute;
+  content: "•";
+  color: #fea30f;
+  font-size: x-large;
+  left: 0px;
+  top: 4px;
+  bottom: 0;
+}
