@@ -13,7 +13,7 @@
      }
  }
 console.log ('change', change)
- var countDownDate = new Date("December 7, 2021 16:37:52").getTime();
+ var countDownDate = new Date("December 1, 2021 16:37:52").getTime();
 
     // Run myfunc every second
     var myfunc = setInterval(function() {

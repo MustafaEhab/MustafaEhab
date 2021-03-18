@@ -9,8 +9,8 @@ import { AccommodationRegisterationComponent } from '../accommodation-registerat
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  conferenceDate = new Date('2021-12-07 09:00');
-  endDate = new Date('2021-12-09 17:00')
+  conferenceDate = new Date('2021-12-01 09:00');
+  endDate = new Date('2021-12-03 17:00')
   constructor(
     public dialog: MatDialog,
   ) { }

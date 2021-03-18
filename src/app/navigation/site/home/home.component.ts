@@ -14,6 +14,6 @@ export class HomeComponent implements OnInit {
     AOS.init();
     // setInterval()
   }
-  conferenceDate = new Date('2021-12-07');
+  conferenceDate = new Date('2021-12-01');
 
 }

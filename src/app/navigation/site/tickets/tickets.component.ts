@@ -13,8 +13,8 @@ declare const disabled: boolean;
 export class TicketsComponent implements OnInit {
   prices_international;
   prices_egy;
-  conferenceDate = new Date('2021-12-07');
-  endDate = new Date('2021-12-09');
+  conferenceDate = new Date('2021-12-01');
+  endDate = new Date('2021-12-03');
   viewedItem;
   today;
   cantRegiser;

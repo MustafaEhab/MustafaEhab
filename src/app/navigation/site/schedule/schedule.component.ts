@@ -8,9 +8,9 @@ import * as AOS from 'aos';
 export class ScheduleComponent implements OnInit {
 
   constructor() { }
-  firstDay = new Date("2021-12-07");
-  secondDay = new Date("2021-12-07");
-  thirdDay = new Date("2021-12-07");
+  firstDay = new Date("2021-12-01");
+  secondDay = new Date("2021-12-02");
+  thirdDay = new Date("2021-12-03");
   ngOnInit(): void {
     AOS.init();
   }
