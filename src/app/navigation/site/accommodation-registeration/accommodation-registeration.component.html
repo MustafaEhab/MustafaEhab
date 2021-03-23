@@ -24,7 +24,8 @@
                             Name Of Accompanying Person
                         </span>
                     </mat-label>
-                    <input type="text" matInput placeholder="Enter Accompanying person Full Name">
+                    <input type="text" matInput formControlName="Accompanying"
+                        placeholder="Enter Accompanying person Full Name">
                 </mat-form-field>
             </div>
         </div>
@@ -49,7 +50,7 @@
                             Age
                         </span>
                     </mat-label>
-                    <input type="number" matInput placeholder="Enter Your Age">
+                    <input type="number" matInput formControlName="age" placeholder="Enter Your Age">
                 </mat-form-field>
             </div>
         </div>
@@ -93,7 +94,7 @@
                             Expected Arrival Date
                         </span>
                     </mat-label>
-                    <input type="date" matInput placeholder="Expected Arrival date">
+                    <input type="date" matInput formControlName="arrivalDate" placeholder="Expected Arrival date">
                 </mat-form-field>
             </div>
             <div class="form-group col-lg-4 col-md-12">
@@ -103,7 +104,7 @@
                             Departure Date
                         </span>
                     </mat-label>
-                    <input type="date" matInput placeholder="Departure">
+                    <input type="date" matInput formControlName="departure" placeholder="Departure">
                 </mat-form-field>
             </div>
             <div class="form-group col-lg-4 col-md-12">

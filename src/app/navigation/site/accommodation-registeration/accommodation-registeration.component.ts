@@ -34,6 +34,10 @@ export class AccommodationRegisterationComponent implements OnInit {
     ),
     nights: new FormControl('', [Validators.required,]
     ),
+    Accompanying: new FormControl(),
+    age: new FormControl(),
+    arrivalDate: new FormControl(),
+    departure: new FormControl(),
   })
   tegister(f) {
     this.formValues = JSON.stringify(f.value)

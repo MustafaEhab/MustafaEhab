@@ -45,7 +45,7 @@
                             Title
                         </span>
                     </mat-label>
-                    <input type="text" matInput placeholder="Enter Your Title">
+                    <input type="text" matInput formControlName="jobTitle" placeholder="Enter Your Title">
                 </mat-form-field>
             </div>
             <div class="form-group col-lg-4 col-md-4">
@@ -167,7 +167,7 @@
                             Fax
                         </span>
                     </mat-label>
-                    <input type="tel" matInput placeholder="Enter Your Present Fax Number">
+                    <input type="tel" matInput formControlName="fax" placeholder="Enter Your Present Fax Number">
                     <!-- <mat-error *ngIf="form.controls.telephone.hasError('required')">
                         Telephone Number is <strong>required</strong>
                     </mat-error> -->
@@ -183,7 +183,8 @@
                             Present Affiliation
                         </span>
                     </mat-label>
-                    <input type="text" matInput placeholder="Enter Your Present Affiliation">
+                    <input type="text" matInput formControlName="PresentAffiliation"
+                        placeholder="Enter Your Present Affiliation">
                 </mat-form-field>
             </div>
             <div class="form-group col-lg-6 col-md-6">
@@ -213,7 +214,8 @@
                             Accompanying person ( You have to by him a ticket )
                         </span>
                     </mat-label>
-                    <input type="text" matInput placeholder="Enter Accompanying person Full Name">
+                    <input type="text" matInput formControlName="Accompanying"
+                        placeholder="Enter Accompanying person Full Name">
                 </mat-form-field>
             </div>
         </div>
@@ -225,7 +227,7 @@
                             Are you presenting a paper?
                         </span>
                     </mat-label>
-                    <input type="text" matInput placeholder="">
+                    <input type="text" matInput formControlName="paperPresenting" placeholder="">
                 </mat-form-field>
             </div>
         </div>
@@ -237,7 +239,7 @@
                             Expected Arrival date in Hurghada
                         </span>
                     </mat-label>
-                    <input type="date" matInput placeholder="Expected Arrival date">
+                    <input type="date" matInput formControlName="arrivalDate" placeholder="Expected Arrival date">
                 </mat-form-field>
             </div>
             <div class="form-group col-lg-6 col-md-12">
@@ -247,7 +249,7 @@
                             Departure Date
                         </span>
                     </mat-label>
-                    <input type="date" matInput placeholder="Departure">
+                    <input type="date" matInput formControlName="departure" placeholder="Departure">
                 </mat-form-field>
             </div>
         </div>
@@ -258,9 +260,11 @@
                         Your Registration fees
                     </span>
                 </mat-label>
-                <button disabled class="btn btn-outline-dark mt-4">
-                    {{data.amount}} {{data.currency}}
-                </button>
+                <input type="text" readonly matInput formControlName="paymentAmount"
+                    placeholder="{{data.amount}} {{data.currency}}" class="fees" [value]="data.amount">
+                <!-- <button disabled formControlName="paymentAmount" class="btn btn-outline-dark mt-4"> -->
+                <!-- {{data.amount}} {{data.currency}} -->
+                <!-- </button> -->
                 <!-- <mat-form-field class="example-full-width"> -->
                 <!-- <input type="text" matInput value="12" disabled placeholder="Registration fees"> -->
                 <!-- </mat-form-field> -->

@@ -43,6 +43,14 @@ export class RegisterationComponent implements OnInit {
     ),
     telephone: new FormControl('', [Validators.required,]
     ),
+    jobTitle: new FormControl(),
+    fax: new FormControl(),
+    PresentAffiliation: new FormControl(),
+    Accompanying: new FormControl(),
+    paperPresenting: new FormControl(),
+    arrivalDate: new FormControl(),
+    departure: new FormControl(),
+    paymentAmount: new FormControl(),
   })
   tegister(f) {
     this.formValues = JSON.stringify(f.value)
