@@ -150,7 +150,7 @@
                             Telephone
                         </span>
                     </mat-label>
-                    <input type="tel" matInput formControlName="telephone" placeholder="Enter Your Telephone Number">
+                    <input type="number" matInput formControlName="telephone" placeholder="Enter Your Telephone Number">
                     <!-- <mat-error *ngIf="form.controls.telephone.hasError('required') && f.submitted">
                         Telephone Number is <strong>required</strong>
                     </mat-error> -->
@@ -167,7 +167,7 @@
                             Fax
                         </span>
                     </mat-label>
-                    <input type="tel" matInput formControlName="fax" placeholder="Enter Your Present Fax Number">
+                    <input type="number" matInput formControlName="fax" placeholder="Enter Your Present Fax Number">
                     <!-- <mat-error *ngIf="form.controls.telephone.hasError('required')">
                         Telephone Number is <strong>required</strong>
                     </mat-error> -->
@@ -260,23 +260,12 @@
                         Your Registration fees
                     </span>
                 </mat-label>
-                <input type="text" readonly matInput formControlName="paymentAmount"
-                    placeholder="{{data.amount}} {{data.currency}}" class="fees" [value]="data.amount">
-                <!-- <button disabled formControlName="paymentAmount" class="btn btn-outline-dark mt-4"> -->
-                <!-- {{data.amount}} {{data.currency}} -->
-                <!-- </button> -->
-                <!-- <mat-form-field class="example-full-width"> -->
-                <!-- <input type="text" matInput value="12" disabled placeholder="Registration fees"> -->
-                <!-- </mat-form-field> -->
             </div>
         </div>
         <div class="form-row justify-content-center">
             <button mat-button cdkFocusInitial mat-raised-button class="btn-success" type="submit"
                 (click)="tegister(f)">Register</button>
-            <!-- <button class="btn btn-outline-danger" color="warn"> -->
-            <!-- <mat-icon>plus_one</mat-icon> -->
-            <!-- <i class="fas fa-times fa-lg" style="color: red;"></i> -->
-            <!-- </button> -->
+
         </div>
     </form>
     <ul class="list-unstyled py-4">

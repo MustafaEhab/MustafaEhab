@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import Swal from 'sweetalert2'
 @Component({
   selector: 'app-accommodation-registeration',
   templateUrl: './accommodation-registeration.component.html',
@@ -17,6 +17,7 @@ export class AccommodationRegisterationComponent implements OnInit {
   selectedValue: string;
   formValues;
   constructor(
+    public dialog: MatDialog,
     @Inject(MAT_DIALOG_DATA) public data,
   ) { }
 
@@ -40,7 +41,21 @@ export class AccommodationRegisterationComponent implements OnInit {
     departure: new FormControl(),
   })
   tegister(f) {
-    this.formValues = JSON.stringify(f.value)
-    console.log(this.formValues)
+
+    if (this.form.valid) {
+      // this.check = false;
+      this.dialog.closeAll()
+      this.formValues = JSON.stringify(f.value)
+      console.log(this.formValues);
+      Swal.fire(
+        {
+          imageUrl: '../../../../assets/imgs/hands.png',
+          imageAlt: 'Custom image',
+          title: 'Your reservation has been made',
+          showConfirmButton: false,
+          timer: 2000
+        }
+      )
+    }
   }
 }

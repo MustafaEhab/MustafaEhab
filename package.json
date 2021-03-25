@@ -41,6 +41,7 @@
     "ngx-slick-carousel": "^0.5.1",
     "rxjs": "~6.5.4",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^10.15.6",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },

@@ -69,27 +69,17 @@
   font-size: 1.1vw;
   font-weight: 500;
 }
-.cost {
-  font-size: 3.3vw;
-  font-weight: 700;
-  color: #262524;
-  opacity: 0.8;
-  text-shadow: 2px 2px 5px #000;
+
+.table-bg {
+  background-image: linear-gradient(
+    45deg,
+    rgba(#262524, 1),
+    rgba(#fea30f, 0.2)
+  );
+  color: #fff;
 }
-// .ticket-holder h3
-.btn {
-  font-weight: 600 !important;
-}
-.dollar {
+thead {
   color: #fea30f;
-  font-size: 3vw;
-}
-.btn-outline-warning {
-  // font-size: 1.3vw;
-  background-color: #fff !important;
-}
-.btn-outline-warning:hover {
-  background-color: #fea30f !important;
 }
 .cancellation-container {
   background-image: linear-gradient(
@@ -145,7 +135,14 @@ ul li:before {
   color: #333;
   font-weight: 600;
 }
-
+.btn-mine {
+  background-color: #fea30f;
+  color: #000;
+}
+.btn-mine:hover {
+  background-color: rgba($color: #fea30f, $alpha: 0.8);
+  color: #000;
+}
 @media screen and (max-width: 767.5px) {
   .ticket-holder h3 {
     font-size: 3.1vw;

@@ -26,69 +26,126 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-2 px-4 justify-content-center align-content-center">
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-4"
-                *ngFor="let ticket of prices_international ; let i = index" data-aos="zoom-in" data-aos-duration="400">
-                <div class="div">
-                    <img src="../../../../assets/imgs/ticket-theme.png" alt="" style="height: 100%; width: 100%;"
-                        class="card-img">
-                    <div class="ticket-holder card-img-overlay">
-                        <div class="row p-0 m-0">
-                            <div class="col-7 p-0 m-0">
-                                <div class="w-100 h-100 p-0 m-0">
-                                    <h3 class="fourth-title">
-                                        4<small class="symbol">th</small> IAAH MENA REGION
-                                        <br>
-                                        <small><small>
-                                                ADOLESCENT HEALTH CONFERENCE
-                                            </small>
-                                        </small>
-                                    </h3>
-                                    <h5>
-                                        <span style="color: #fea30f;">
-                                            From :
-                                        </span>
-                                        <span class="text-muted">
-                                            {{conferenceDate | date : 'mediumDate'}}
-                                        </span>
-                                        <br>
-                                        <span style="color: #fea30f;">
-                                            To :
-                                        </span>
-                                        <span class="text-muted">
-                                            {{endDate | date : 'mediumDate'}}
-                                        </span>
-                                    </h5>
-                                    <h3 style="font-weight: 500;">
-                                        {{ticket.guest}}
-                                    </h3>
-
-                                </div>
-                            </div>
-                            <div class="col-5">
-                                <div class="h-100 w-100 d-flex text-center px-0">
-                                    <div class="h-75 my-auto px-0">
-                                        <h1 class="px-0 mx-0">
-                                            <span class="cost">
-                                                {{ticket.amount}}
-                                            </span>
-                                            <span class="dollar">
-                                                {{ticket.currency}}
-                                            </span>
+        <div class="row justify-content-center m-0 p-0">
+            <div class="col-12 m-0 p-0">
+                <div class="w-100 h-100 px-0 mx-0">
+                    <div class="px-0 w-100 h-100 d-flex">
+                        <table class="table w-75 mx-auto table-bg" data-aos="fade-right">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-uppercase">
+                                        <h1 class="my-0 pl-2">
+                                            CATEGORY
                                         </h1>
-                                        <button class="btn btn-outline-warning" (click)="openDialog(ticket.id)"
-                                            [disabled]="cantRegiser">
-                                            Buy Ticket
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </th>
+                                    <th scope="col" class="text-uppercase">
+                                        <h1 class="my-0">
+                                            Before August 31, 2021
+                                        </h1>
+                                    </th>
+                                    <th scope="col" class="text-uppercase">
+                                        <h1 class="my-0">
+                                            Before Nov. 30, 2021
+                                        </h1>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of tickets_interational">
+                                    <td>
+                                        <h3 class="my-0 pl-2">
+                                            {{item.guest}}
+                                        </h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="my-0">
+                                            {{item.amount}}
+                                            <span style="color: #fea30f;">
+                                                {{item.currency}}
+                                            </span>
+                                        </h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="my-0">
+                                            {{item.amount_after}}
+                                            <span style="color: #fea30f;">
+                                                {{item.currency}}
+                                            </span>
+                                        </h3>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row w-100">
+        <!-- <div class=" row pt-2 px-4 justify-content-center align-content-center">
+                                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-4"
+                                                    *ngFor="let ticket of prices_international ; let i = index"
+                                                    data-aos="zoom-in" data-aos-duration="400">
+                                                    <div class="div">
+                                                        <img src="../../../../assets/imgs/ticket-theme.png" alt=""
+                                                            style="height: 100%; width: 100%;" class="card-img">
+                                                        <div class="ticket-holder card-img-overlay">
+                                                            <div class="row p-0 m-0">
+                                                                <div class="col-7 p-0 m-0">
+                                                                    <div class="w-100 h-100 p-0 m-0">
+                                                                        <h3 class="fourth-title">
+                                                                            4<small class="symbol">th</small> IAAH MENA
+                                                                            REGION
+                                                                            <br>
+                                                                            <small><small>
+                                                                                    ADOLESCENT HEALTH CONFERENCE
+                                                                                </small>
+                                                                            </small>
+                                                                        </h3>
+                                                                        <h5>
+                                                                            <span style="color: #fea30f;">
+                                                                                From :
+                                                                            </span>
+                                                                            <span class="text-muted">
+                                                                                {{conferenceDate | date : 'mediumDate'}}
+                                                                            </span>
+                                                                            <br>
+                                                                            <span style="color: #fea30f;">
+                                                                                To :
+                                                                            </span>
+                                                                            <span class="text-muted">
+                                                                                {{endDate | date : 'mediumDate'}}
+                                                                            </span>
+                                                                        </h5>
+                                                                        <h3 style="font-weight: 500;">
+                                                                            {{ticket.guest}}
+                                                                        </h3>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="h-100 w-100 d-flex text-center px-0">
+                                                                        <div class="h-75 my-auto px-0">
+                                                                            <h1 class="px-0 mx-0">
+                                                                                <span class="cost">
+                                                                                    {{ticket.amount}}
+                                                                                </span>
+                                                                                <span class="dollar">
+                                                                                    {{ticket.currency}}
+                                                                                </span>
+                                                                            </h1>
+                                                                            <button class="btn btn-outline-warning"
+                                                                                (click)="openDialog(ticket.id)"
+                                                                                [disabled]="cantRegiser">
+                                                                                Buy Ticket
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                    </div> -->
+        <!-- <div class="row w-100">
             <div class="col-12">
                 <div class="w-100 h-100 px-4 pt-5 pb-3 text-center">
                     <h1 class="international-title ">
@@ -158,7 +215,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <div class="cancellation-container">
@@ -190,14 +247,25 @@
                         </h1>
                         <h2 class="commitee pt-4">
                             <span class="d-block py-0 my-0">
-                                While it will be possible to register on site, we do suggest that participants take
+                                While it will be possible to register on site, we do suggest that
+                                participants take
                                 advantage of the lower fee (early
-                                registration) and convenience of registering in advance. Those registered on site
+                                registration) and convenience of registering in advance. Those registered on
+                                site
                                 will obtain the certificates of
                                 attendance by email within 2 weeks after the conference.
                             </span>
                         </h2>
                     </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="w-100 h-100 d-flex py-4">
+                    <button class="btn btn-mine px-4 py-2 mx-auto" (click)="openDialog()">
+                        <h1 class="my-0">
+                            Register
+                        </h1>
+                    </button>
                 </div>
             </div>
             <div class="col-col-md-12">
@@ -208,7 +276,8 @@
                         </h1>
                         <h2 class="commitee pt-4">
                             <span class="d-block py-0 my-0">
-                                All refunds will incur a 20% handling fee. No refunds will be made after October
+                                All refunds will incur a 20% handling fee. No refunds will be made after
+                                October
                                 31st, 2021. However, another delegate
                                 may be nominated as a replacement, up to two weeks before the conference.
                                 Cancellation must be in writing (by letter,

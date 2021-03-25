@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import Swal from 'sweetalert2'
 @Component({
   selector: 'app-registeration',
   templateUrl: './registeration.component.html',
@@ -15,7 +15,9 @@ export class RegisterationComponent implements OnInit {
   ];
   selectedValue: string;
   formValues;
+  check = false;
   constructor(
+    public dialog: MatDialog,
     @Inject(MAT_DIALOG_DATA) public data,
   ) { }
 
@@ -53,7 +55,21 @@ export class RegisterationComponent implements OnInit {
     paymentAmount: new FormControl(),
   })
   tegister(f) {
-    this.formValues = JSON.stringify(f.value)
-    console.log(this.formValues)
+    if (this.form.valid) {
+      // this.check = false;
+      this.dialog.closeAll()
+      this.formValues = JSON.stringify(f.value)
+      console.log(this.formValues);
+      Swal.fire(
+        {
+          imageUrl: '../../../../assets/imgs/hands.png',
+          imageAlt: 'Custom image',
+          title: 'Your registration has been done successfully',
+          showConfirmButton: false,
+          timer: 2000
+        }
+      )
+    }
   }
+
 }

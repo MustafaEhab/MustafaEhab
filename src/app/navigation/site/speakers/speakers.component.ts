@@ -8,16 +8,16 @@ import * as AOS from 'aos';
 export class SpeakersComponent implements OnInit {
   ambassadors = [
     {
+      name: "Dr. Magdy Khaled",
+      title: "SRH Regional Consultant, Former Director of UNFPA, Egypt"
+    },
+    {
       name: "Dr. Montasser Kamal",
       title: "Program leader, global health, IDRC, Canada"
     },
     {
       name: "Dr. Umaiyeh Khammash",
       title: "Director, Juzoor for Health & Development, Palestine"
-    },
-    {
-      name: "Dr. Magdy Khaled",
-      title: "SRH Regional Consultant, Former Director of UNFPA, Egypt"
     }
   ];
   safety = [
@@ -46,10 +46,6 @@ export class SpeakersComponent implements OnInit {
   ];
   scientificmembers = [
     {
-      name: "Prof. Omaima Al Gebaly ",
-      country: "(Egypt)"
-    },
-    {
       name: "Dr. Beatrice Khater",
       country: "(Lebanon)"
     },
@@ -74,6 +70,10 @@ export class SpeakersComponent implements OnInit {
       country: "(Turkey)"
     },
     {
+      name: "Prof. Omaima Al Gebaly ",
+      country: "(Egypt)"
+    },
+    {
       name: "Prof. Orhan Derman",
       country: "(Turkey)"
     },
@@ -93,7 +93,7 @@ export class SpeakersComponent implements OnInit {
       name: "Dr. Hoda Radwan",
     },
     {
-      name: "Ms. Rawan Al Menshawi",
+      name: "Ms. Rawan El Minshawy",
     }
   ]
   constructor() { }

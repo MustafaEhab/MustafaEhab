@@ -25,9 +25,9 @@ export class CallUsComponent implements OnInit {
     {
       title: "It should be titled with the name of the presenter"
     },
-    {
-      title: "Please, submit your abstract in our official web-mail: abstracts@MENA4.org"
-    },
+    // {
+    //   title: "Please, submit your abstract in our official web-mail: abstracts@MENA4.org"
+    // },
     {
       title: "Abstracts should be short (maximum 400 words), clear, concise and written in English with correct spelling and good sentence structure"
     },

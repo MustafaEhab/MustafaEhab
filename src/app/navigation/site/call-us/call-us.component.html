@@ -2,7 +2,7 @@
     <div class="w-100 h-100 pt-5 px-0 mx-0 justify-content-center">
         <div class="pt-5 pb-5 m-0">
             <h1 class="title text-uppercase" data-aos="zoom-in-up">
-                CALL FOR PAPERS
+                CALL FOR abstract
             </h1>
             <div class="row justify-content-center align-items-center align-content-center">
                 <div class="col-1 left-border mx-0">
@@ -37,19 +37,19 @@
                     <h1 class="text-uppercase sub-title">
                         An abstract should be submitted for papers to be considered for oral presentation
                     </h1>
+                    <h2 class="text-dark" style="font-weight: 700;">
+                        ( Please, submit your abstract in our official web-mail: abstracts@MENA4.org )
+                    </h2>
                     <div class="row w-100 p-0 m-0">
                         <div class="col-md-6">
                             <div class="w-100 h-100 p-0 m-0">
                                 <ul class="list-unstyled">
                                     <li class="position-relative pl-4 pb-2" *ngFor="let ab of abstract ">
-                                        <h2 class="commitee">
-                                            <span class="d-block py-0 my-0">
-                                                {{ab.name}}
-                                            </span>
-                                            <small class="d-block py-0 my-0">
-                                                {{ab.title}}
-                                            </small>
-                                        </h2>
+                                        <h3 class="commitee">
+
+                                            {{ab.title}}
+
+                                        </h3>
                                     </li>
                                 </ul>
                             </div>
@@ -58,14 +58,9 @@
                             <div class="w-100 h-100 p-0 m-0">
                                 <ul class="list-unstyled">
                                     <li class="position-relative pl-4 pb-2" *ngFor="let ab of abstract_right ">
-                                        <h2 class="commitee">
-                                            <span class="d-block py-0 my-0">
-                                                {{ab.name}}
-                                            </span>
-                                            <small class="d-block py-0 my-0">
-                                                {{ab.title}}
-                                            </small>
-                                        </h2>
+                                        <h3 class="commitee">
+                                            {{ab.title}}
+                                        </h3>
                                     </li>
                                 </ul>
                             </div>

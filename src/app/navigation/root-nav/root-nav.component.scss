@@ -1,6 +1,17 @@
 .container {
   max-width: 90% !important;
 }
+.bg-transparent {
+  background-color: rgba($color: #262524, $alpha: 0.6) !important;
+  box-shadow: 2px 0px 5px rgba($color: #aaa, $alpha: 0.4);
+  height: 100px;
+  transition: 0.25s height;
+}
+.scrolledNav {
+  background-color: rgba($color: #262524, $alpha: 1) !important;
+  box-shadow: 2px 0px 5px rgba($color: #000, $alpha: 1);
+  height: 80px;
+}
 a.active,
 a:hover,
 a:focus,
@@ -24,8 +35,9 @@ a:active {
   content: "";
   width: 0;
   bottom: 0;
+  top: 120%;
   left: 50%;
-  transition: 250ms linear;
+  transition: 150ms linear;
 }
 .nav-link:hover:after,
 .nav-link.active:after,
@@ -38,26 +50,31 @@ a:active {
   width: 50%;
   background-color: #fea30f;
   bottom: 0;
+  top: 120%;
   left: 25%;
   transform: scaleX(1) !important;
 }
-.bg-transparent {
-  background-color: rgba($color: #262524, $alpha: 0.6) !important;
-  box-shadow: 2px 0px 5px rgba($color: #aaa, $alpha: 0.4);
+
+.bg-transparent .logo-holder {
   height: 100px;
-  transition: 0.25s height;
 }
-.scrolledNav {
-  background-color: rgba($color: #262524, $alpha: 1) !important;
-  box-shadow: 2px 0px 5px rgba($color: #000, $alpha: 1);
-  height: 70px;
+.scrolledNav .logo-holder {
+  height: 70px !important;
 }
-.logo {
+.bg-transparent .logo-holder .logo {
   height: 65px;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+.scrolledNav .logo-holder .logo {
+  margin-top: -30px !important;
+  margin-bottom: 0 !important;
 }
 .ticket-item {
-  transform: rotate(90deg);
-  margin: 0;
+  // transform: rotate(90deg);
+  writing-mode: vertical-lr;
+  // margin: 0;
+  margin-top: -28px;
 }
 .ticket-link {
   background-image: linear-gradient(
@@ -66,10 +83,14 @@ a:active {
     rgba($color: #262524, $alpha: 0.9)
   );
   border: 1.5px solid #fea30f;
-  height: 50px;
-  padding-right: 10px !important;
-  padding-left: 65px !important;
-  border-radius: 5px;
+  // height: 50px;
+  // width: 30px;
+  // padding-right: 10px !important;
+  // padding-left: 65px !important;
+  // padding: 0px 20px;
+  // border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   color: #fff !important;
 }
 .ticket-link:hover,
@@ -89,16 +110,23 @@ a:active {
 .ticket-link.active:after,
 .ticket-link:focus:after,
 .ticket-link:active:after {
-  // display: block;
+  display: none !important;
   content: "";
-  width: 0;
+  width: 0 !important;
+  height: 0px !important;
   bottom: 0;
   left: 0;
 }
 @media screen and (max-width: 992px) {
-  // .contain {
-  //   display: block;
-  // }
+  .navbar-nav {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar-collapse {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 3px 3px 5px rgba($color: #000, $alpha: 1);
+  }
   .nav-link:hover:after,
   .nav-link.active:after,
   .nav-link:focus:after,
@@ -119,28 +147,38 @@ a:active {
   .navbar-collapse {
     background-color: rgba($color: #262524, $alpha: 1) !important;
     box-shadow: 0px 0px 0px rgba($color: #aaa, $alpha: 0.4);
-    padding: 20px 20px;
+    // padding: 20px 20px;
   }
   .scrolledNav {
     background-color: rgba($color: #262524, $alpha: 1) !important;
     box-shadow: 2px 0px 5px rgba($color: #000, $alpha: 1);
     // z-index: 99999999999 !important;
   }
+  .scrolledNav {
+    opacity: 1 !important;
+    // margin: 0 !important;
+    top: 0 !important;
+  }
+  .bg-transparent .logo-holder {
+    height: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .bg-transparent .logo-holder .logo {
+    height: 65px;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
   .ticket-item {
-    transform: rotate(0deg);
+    // transform: rotate(0deg);
+    writing-mode: horizontal-tb !important;
     // margin: 0;
+    margin-top: 0px;
+    margin-left: 0 !important;
   }
   .ticket-link {
-    background-image: linear-gradient(
-      -45deg,
-      rgba($color: #fea30f, $alpha: 0.9),
-      rgba($color: #262524, $alpha: 0.9)
-    );
-    border: 1.5px solid #fea30f;
-    height: 50px;
-    padding-right: 20px !important;
-    padding-left: 20px !important;
     border-radius: 5px;
     color: #fff !important;
+    padding-left: 15px;
   }
 }

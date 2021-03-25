@@ -23,123 +23,95 @@ export class TicketsComponent implements OnInit {
   ) { }
   ngOnInit(): void {
     AOS.init();
-    if (change == false) {
-      this.prices_international = this.tickets_interational_before;
-      this.prices_egy = this.tickets_egy_before;
-      this.cantRegiser = false;
-    }
-    else {
-      this.prices_international = this.tickets_interational_after;
-      this.prices_egy = this.tickets_egy_after;
-      this.cantRegiser = false;
-    }
-    this.cantRegiser = disabled;
   }
 
-  openDialog(id) {
+  openDialog() {
     // console.log(id);
-    this.viewedItem = this.prices_international.find(x => x.id === id);
+    // this.viewedItem = this.prices_international.find(x => x.id === id);
     const dialogRef = this.dialog.open(RegisterationComponent, {
       panelClass: 'my-dialog-class',
-      data: this.viewedItem,
+      // data: this.viewedItem,
     });
 
     dialogRef.afterClosed().subscribe(result => {
       // console.log(`Dialog result: ${result}`);
     });
   }
-  openDialogEgy(id) {
-    console.log(id);
-    this.viewedItem = this.prices_egy.find(x => x.id === id);
+  openDialogEgy() {
+    console.log();
+    // this.viewedItem = this.prices_egy.find(x => x.id === id);
     const dialogRef = this.dialog.open(RegisterationComponent, {
       panelClass: 'my-dialog-class',
-      data: this.viewedItem,
+      // data: this.viewedItem,
     });
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
   }
-  tickets_interational_before = [
+  tickets_interational = [
     {
       id: "1",
       guest: "International or Regional Participant",
       amount: "175",
       currency: "$",
+      amount_after: "200",
     },
     {
       id: "2",
       guest: "IAAH and ACAM Members",
       amount: "150",
-      currency: "$"
-    },
-    {
-      id: "3",
-      guest: "Accompanying person",
-      amount: "50",
-      currency: "$"
-    },
-  ];
-  tickets_interational_after = [
-    {
-      id: "1",
-      guest: "International or Regional Participant",
-      amount: "200",
       currency: "$",
-    },
-    {
-      id: "2",
-      guest: "IAAH and ACAM Members",
-      amount: "175",
-      currency: "$"
+      amount_after: "175",
     },
     {
       id: "3",
       guest: "Accompanying person",
       amount: "50",
-      currency: "$"
+      currency: "$",
+      amount_after: "50",
     },
-  ];
-
-  tickets_egy_before = [
     {
       id: "1",
       guest: "Participants from Egypt",
       amount: "500",
-      currency: "EGP"
+      currency: "EGP",
+      amount_after: "600",
     },
     {
       id: "2",
       guest: "Medical Students",
       amount: "200",
-      currency: "EGP"
+      currency: "EGP",
+      amount_after: "200",
     },
     {
       id: "3",
       guest: "Accompanying person",
       amount: "200",
-      currency: "EGP"
+      currency: "EGP",
+      amount_after: "200",
     },
   ];
-  tickets_egy_after = [
-    {
-      id: "1",
-      guest: "Participants from Egypt",
-      amount: "600",
-      currency: "EGP"
-    },
-    {
-      id: "2",
-      guest: "Medical Students",
-      amount: "200",
-      currency: "EGP"
-    },
-    {
-      id: "3",
-      guest: "Accompanying person",
-      amount: "200",
-      currency: "EGP"
-    },
-  ];
+  // tickets_egy_after = [
+  //   {
+  //     id: "1",
+  //     guest: "Participants from Egypt",
+  //     amount: "600",
+  //     currency: "EGP"
+  //   },
+  //   {
+  //     id: "2",
+  //     guest: "Medical Students",
+  //     amount: "200",
+  //     currency: "EGP"
+  //   },
+  //   {
+  //     id: "3",
+  //     guest: "Accompanying person",
+  //     amount: "200",
+  //     currency: "EGP"
+  //   },
+  // ];
   packge = [
     {
       title: "Admission to the scientific sessions and the exhibition area"
