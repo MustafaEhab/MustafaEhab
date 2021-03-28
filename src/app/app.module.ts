@@ -29,6 +29,7 @@ import { FooterComponent } from './navigation/footer/footer.component';
 import { WelcomeComponent } from './navigation/site/welcome/welcome.component';
 import { CallUsComponent } from './navigation/site/call-us/call-us.component';
 import { AccommodationRegisterationComponent } from './navigation/site/accommodation-registeration/accommodation-registeration.component';
+import { AccomodationComponent } from './navigation/site/accomodation/accomodation.component';
 
 library.add(fas, far, fab);
 @NgModule({
@@ -47,6 +48,7 @@ library.add(fas, far, fab);
     WelcomeComponent,
     CallUsComponent,
     AccommodationRegisterationComponent,
+    AccomodationComponent,
   ],
   imports: [
     BrowserModule,

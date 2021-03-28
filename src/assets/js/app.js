@@ -56,7 +56,7 @@ function scrollFunction() {
 
 //  window.onscroll = function(){}
  function scrollActive(){
-		var scrollDistance = $(window).scrollTop();
+		var scrollDistance = $(window).scrollTop()+50;
 		// Assign active class to nav links while scolling
 		$('.section').each(function(i) {
 				if ($(this).position().top <= scrollDistance) {

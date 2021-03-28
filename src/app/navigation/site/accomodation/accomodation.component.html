@@ -1,0 +1,113 @@
+<div class="tickets-container py-5 w-100">
+    <div class="contain mx-auto">
+        <div class="text-center pt-5">
+            <h1 class="title text-uppercase" data-aos="zoom-in-up">
+                ACCOMMODATION
+            </h1>
+            <div class="row justify-content-center align-items-center align-content-center">
+                <div class="col-1 left-border mx-0">
+                </div>
+                <div class="col-1 px-0 mx-0 flex-column divider-img">
+                    <img src="../../../../assets/svg/logo_no_text_light2.svg" class=" mx-0 px-0" alt="">
+                </div>
+                <div class="col-1 left-border mx-0">
+                </div>
+            </div>
+            <h2 class="tickets-desc w-75 mx-auto">
+                The organizing committee has negotiated a special rate for the conference participants at Marriott Beach
+                Resort,
+                Hurghada where all events will be held:
+                <span style="color:#fea30f;" class="d-block">
+                    THE RATES ARE ON A SOFT ALL INCLUSIVE BASIS (Food & Soft Drinks)
+                </span>
+            </h2>
+        </div>
+
+        <div class="row justify-content-center m-0 p-0">
+            <div class="col-lg-6 m-0 p-0">
+                <div class="w-100 h-100 px-0 mx-0">
+                    <div class="px-0 w-100 text-left text-light">
+                        <h2 class="pt-2 w-75 mx-auto international-title">
+                            Rates are for a room per night inclusive of all taxes and service charges
+                        </h2>
+                    </div>
+                    <div class="px-0 w-100 h-75 d-flex">
+                        <table class="table w-75 mx-auto table-bg" data-aos="fade-right">
+                            <thead>
+                                <tr class="text-center">
+                                    <th scope="col" colspan="2" class="text-uppercase text-center">
+                                        <h1 class="my-0 pl-2 text-center">
+                                            For Non Egyptians
+                                        </h1>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of tickets_interational">
+                                    <td>
+                                        <h3 class="my-0 pl-2">
+                                            {{item.guest}}
+                                        </h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="my-0">
+                                            {{item.amount}}
+                                            <span style="color: #fea30f;">
+                                                {{item.currency}}
+                                            </span>
+                                        </h3>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 m-0 p-0">
+                <div class="w-100 h-100 px-0 mx-0">
+                    <div class="px-0 w-100 direction text-right text-light">
+                        <h2 class="pt-2 w-75 mx-auto international-title">
+                            الأسعار للمبيت ليلة واحدة والوجبات والمشروبات الغير كحولية شاملة كافة
+                            الضرائب
+                        </h2>
+                    </div>
+                    <div class="px-0 w-100 h-75 d-flex direction">
+                        <table class="table w-75 mx-auto table-bg direction" data-aos="fade-right">
+                            <thead>
+                                <tr class="text-center">
+                                    <th scope="col" colspan="2" class="text-uppercase text-center">
+                                        <h1 class="my-0 pl-2 text-center">
+                                            للمقيمين فى مصر
+                                        </h1>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-right direction">
+                                <tr *ngFor="let item of tickets_egyptians">
+                                    <td>
+                                        <h3 class="my-0 pl-2">
+                                            {{item.guest}}
+                                        </h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="my-0">
+                                            {{item.amount}}
+                                            <span style="color: #fea30f;">
+                                                {{item.currency}}
+                                            </span>
+                                        </h3>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 d-flex pt-4">
+            <button class="btn btn-mine px-3 py-2 mx-auto" style="font-weight: 600;" (click)="openDialog()">
+                Hotel Booking
+            </button>
+        </div>
+    </div>
+</div>

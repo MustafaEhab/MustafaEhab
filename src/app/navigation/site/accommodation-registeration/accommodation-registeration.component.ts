@@ -39,6 +39,7 @@ export class AccommodationRegisterationComponent implements OnInit {
     age: new FormControl(),
     arrivalDate: new FormControl(),
     departure: new FormControl(),
+    special: new FormControl(),
   })
   tegister(f) {
 

@@ -9,7 +9,8 @@ export class SpeakersComponent implements OnInit {
   ambassadors = [
     {
       name: "Dr. Magdy Khaled",
-      title: "SRH Regional Consultant, Former Director of UNFPA, Egypt"
+      title: "SRH Regional Consultant, Former Director of UNFPA, Egypt",
+      confirmation: "( To be confirmed )"
     },
     {
       name: "Dr. Montasser Kamal",
@@ -90,10 +91,16 @@ export class SpeakersComponent implements OnInit {
       name: "Ms. Farah Feteha",
     },
     {
+      name: "Ms. Hannaa Hamed"
+    },
+    {
       name: "Dr. Hoda Radwan",
     },
     {
       name: "Ms. Rawan El Minshawy",
+    },
+    {
+      name: "Dr. Yasmine sakr"
     }
   ]
   constructor() { }
