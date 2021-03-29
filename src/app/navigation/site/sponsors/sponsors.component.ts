@@ -16,7 +16,8 @@ export class SponsorsComponent implements OnInit {
     { img: "../../../../assets/imgs/sponsors/image0.jpeg" },
     { img: "../../../../assets/imgs/sponsors/image1.jpeg" },
     { img: "../../../../assets/imgs/sponsors/image2.jpeg" },
-    { img: "../../../../assets/imgs/sponsors/sponsor3.jpg" }
+    { img: "../../../../assets/imgs/sponsors/image3.jpg" },
+    { img: "../../../../assets/imgs/sponsors/image4.png" },
   ];
   slideConfig = { "speed": 300, "slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, };
 
