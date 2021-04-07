@@ -9,8 +9,8 @@ import { AccommodationRegisterationComponent } from '../accommodation-registerat
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  conferenceDate = new Date('2021-12-01 09:00');
-  endDate = new Date('2021-12-03 17:00')
+  conferenceDate = new Date('2021-12-01');
+  endDate = new Date('2021-12-03')
   constructor(
     public dialog: MatDialog,
   ) { }
@@ -21,12 +21,12 @@ export class ContactComponent implements OnInit {
   lat: number = 27.197238238852517;
   lng: number = 33.844337168626446;
 
-  openDialog() {
-    const dialogRef = this.dialog.open(AccommodationRegisterationComponent, {
-      panelClass: 'my-dialog-class',
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
-  }
+  // openDialog() {
+  //   const dialogRef = this.dialog.open(AccommodationRegisterationComponent, {
+  //     panelClass: 'my-dialog-class',
+  //   });
+  //   dialogRef.afterClosed().subscribe(result => {
+  //     console.log(`Dialog result: ${result}`);
+  //   });
+  // }
 }

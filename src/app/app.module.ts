@@ -30,6 +30,10 @@ import { WelcomeComponent } from './navigation/site/welcome/welcome.component';
 import { CallUsComponent } from './navigation/site/call-us/call-us.component';
 import { AccommodationRegisterationComponent } from './navigation/site/accommodation-registeration/accommodation-registeration.component';
 import { AccomodationComponent } from './navigation/site/accomodation/accomodation.component';
+import { LoaderComponent } from './loader/loader.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { RouterModule, Routes } from '@angular/router';
+
 
 library.add(fas, far, fab);
 @NgModule({
@@ -49,10 +53,12 @@ library.add(fas, far, fab);
     CallUsComponent,
     AccommodationRegisterationComponent,
     AccomodationComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    RouterModule.forRoot([]),
     MDBBootstrapModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
@@ -62,7 +68,8 @@ library.add(fas, far, fab);
     SlickCarouselModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCHnj2ejtMhrAZ6UsOPw3TQtulK1RUd1Yo'
-    })
+    }),
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

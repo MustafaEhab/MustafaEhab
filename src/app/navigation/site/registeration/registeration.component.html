@@ -1,6 +1,6 @@
 <h2 mat-dialog-title>Register Now</h2>
 <mat-dialog-content class="">
-    <form class="example-form px-4" [formGroup]="form" #f="ngForm">
+    <form class="example-form px-4" [formGroup]="form" #f="ngForm" id="f">
         <div class="form-row justify-content-center">
             <div class="form-group col-lg-6 col-md-6">
                 <mat-form-field class="example-full-width">
@@ -253,17 +253,23 @@
                 </mat-form-field>
             </div>
         </div>
-
         <div class="form-row justify-content-center">
-            <button mat-button cdkFocusInitial mat-raised-button class="btn-success" type="submit"
+            <button mat-button mat-raised-button class="btn-success" type="submit"
                 (click)="tegister(f)">Register</button>
-
         </div>
     </form>
     <ul class="list-unstyled py-4">
         <li class="d-block p-0 m-0">
             <h2>
                 THE REGISTRATION PROCESS WILL BE COMPLETED ONLY UPON PAYING THE REGISTRATION FEES
+            </h2>
+            <h2 class="my-1">
+                <span class="bank px-2">
+                    Bank Name :
+                </span>
+                <small class="text-secondary">
+                    Emirates NBD Bank
+                </small>
             </h2>
             <h2 class="my-1">
                 <span class="bank px-2">
@@ -283,22 +289,14 @@
             </h2>
             <h2 class="my-1">
                 <span class="bank px-2">
-                    Number Iban :
+                    IBAN :
                 </span>
                 <small class="text-secondary">
                     EG730014003800001019209662001
                 </small>
             </h2>
-            <h2 class="my-1">
-                <span class="bank px-2">
-                    Bank :
-                </span>
-                <small class="text-secondary">
-                    Emirates NBD Egypt
-                </small>
-            </h2>
-        </li>
 
+        </li>
     </ul>
 </mat-dialog-content>
 <mat-dialog-actions align="center">

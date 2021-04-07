@@ -7,19 +7,20 @@ import * as AOS from 'aos';
 })
 export class SpeakersComponent implements OnInit {
   ambassadors = [
-    {
-      name: "Dr. Magdy Khaled",
-      title: "SRH Regional Consultant, Former Director of UNFPA, Egypt",
-      confirmation: "( To be confirmed )"
-    },
+
     {
       name: "Dr. Montasser Kamal",
-      title: "Program leader, global health, IDRC, Canada"
+      title: "Program leader, global health, IDRC, Canada",
+      confirmation: "( To be confirmed )"
     },
     {
       name: "Dr. Umaiyeh Khammash",
       title: "Director, Juzoor for Health & Development, Palestine"
-    }
+    },
+    {
+      name: "Dr. Magdy Khaled",
+      title: "SRH Regional Consultant, Former Director of UNFPA, Egypt",
+    },
   ];
   safety = [
     {

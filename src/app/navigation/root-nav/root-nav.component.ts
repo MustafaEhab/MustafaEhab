@@ -37,6 +37,9 @@ export class RootNavComponent implements OnInit {
       document.getElementById("navbar").classList.remove("scrolledNav")
     }
   }
+  scrollToElement($element) {
+    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  }
   // @HostListener("window:scroll", [''])
   // onWindowScroll() {
   //   const offset = this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
@@ -49,5 +52,6 @@ export class RootNavComponent implements OnInit {
   //     console.log('window');
   //   }
   // }
+
 
 }

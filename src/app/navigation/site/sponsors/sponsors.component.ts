@@ -19,7 +19,15 @@ export class SponsorsComponent implements OnInit {
     { img: "../../../../assets/imgs/sponsors/image3.jpg" },
     { img: "../../../../assets/imgs/sponsors/image4.png" },
   ];
-  slideConfig = { "speed": 300, "slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, };
+  slideConfig = {
+    "autoplaySpeed": 3000,
+    "slidesToShow": 4,
+    "slidesToScroll": 1,
+    "autoplay": true,
+    "dots": true,
+    "variableWidth": false,
+    "pauseOnHover": false,
+  };
 
   slickInit(e) {
     console.log('slick initialized');

@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import Swal from 'sweetalert2'
 @Component({
   selector: 'app-registeration',
@@ -19,10 +19,12 @@ export class RegisterationComponent implements OnInit {
   constructor(
     public dialog: MatDialog,
     @Inject(MAT_DIALOG_DATA) public data,
+    public dialogRef: MatDialogRef<RegisterationComponent>,
   ) { }
 
   ngOnInit(): void {
-    window.scrollTo(0, 0)
+    var elem = document.getElementById('f')
+    elem.scrollIntoView({ behavior: "smooth", block: "start" })
   }
   form = new FormGroup({
     emailFormControl: new FormControl('', [

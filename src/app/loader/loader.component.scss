@@ -1,0 +1,25 @@
+.spinner {
+  position: absolute;
+  left: 50% !important;
+  top: 50% !important;
+  z-index: 1000000000;
+  width: 150px;
+  height: 150px;
+}
+.bg-spinner {
+  position: relative !important;
+  width: 100vw !important;
+  height: 100% !important;
+}
+.bg-overlay {
+  position: absolute;
+  left: 0;
+  right: 0 !important;
+  top: 0;
+  bottom: 0;
+  background-image: url("../../assets/imgs/theme-new-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: whitesmoke;
+}

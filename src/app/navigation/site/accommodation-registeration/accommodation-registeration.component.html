@@ -1,4 +1,4 @@
-<h2 mat-dialog-title>Register Now</h2>
+<h2 mat-dialog-title>Book Now</h2>
 <mat-dialog-content class="">
     <form class="example-form px-4" [formGroup]="form" #f="ngForm">
         <div class="form-row justify-content-center">
@@ -134,7 +134,7 @@
             </div>
         </div>
         <div class="form-row justify-content-center">
-            <button mat-button cdkFocusInitial mat-raised-button class="btn-success" type="submit"
+            <button mat-button mat-raised-button class="btn-success" type="submit"
                 (click)="tegister(f)">Register</button>
         </div>
     </form>
@@ -142,6 +142,14 @@
         <li class="d-block p-0 m-0">
             <h2>
                 HOTEL RESERVATION WILL ONLY BE CONFIRMED AFTER TRANSFER THE COST TO :
+            </h2>
+            <h2 class="my-1">
+                <span class="bank px-2">
+                    Bank Name :
+                </span>
+                <small class="text-secondary">
+                    Emirates NBD Bank
+                </small>
             </h2>
             <h2 class="my-1">
                 <span class="bank px-2">
@@ -161,22 +169,21 @@
             </h2>
             <h2 class="my-1">
                 <span class="bank px-2">
-                    Number Iban :
+                    IBAN :
                 </span>
                 <small class="text-secondary">
                     EG730014003800001019209662001
                 </small>
             </h2>
-            <h2 class="my-1">
+            <!-- <h2 class="my-1">
                 <span class="bank px-2">
                     Bank :
                 </span>
                 <small class="text-secondary">
                     Emirates NBD Egypt
                 </small>
-            </h2>
+            </h2> -->
         </li>
-
     </ul>
 </mat-dialog-content>
 <mat-dialog-actions align="center">

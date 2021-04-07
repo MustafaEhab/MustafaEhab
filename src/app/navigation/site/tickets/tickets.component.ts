@@ -30,7 +30,7 @@ export class TicketsComponent implements OnInit {
     // this.viewedItem = this.prices_international.find(x => x.id === id);
     const dialogRef = this.dialog.open(RegisterationComponent, {
       panelClass: 'my-dialog-class',
-      // data: this.viewedItem,
+
     });
     dialogRef.afterClosed().subscribe(result => {
       // console.log(`Dialog result: ${result}`);

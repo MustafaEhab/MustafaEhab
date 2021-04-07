@@ -20,30 +20,30 @@ export class AccomodationComponent implements OnInit {
       panelClass: 'my-dialog-class',
     });
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      // console.log(`Dialog result: ${result}`);
     });
   }
   tickets_interational = [
     {
       guest: "Single Room",
-      amount: "105",
+      amount: "108",
       currency: "$",
     },
     {
       guest: "Double Room",
-      amount: "130",
+      amount: "138",
       currency: "$",
     },
   ];
   tickets_egyptians = [
     {
       guest: "غرفة مفردة مطله على البحر",
-      amount: "1600",
+      amount: "1800",
       currency: "جنيه",
     },
     {
       guest: "غرفة مزدوجه مطله على البحر",
-      amount: "1900",
+      amount: "2000",
       currency: "جنيه",
     },
   ]

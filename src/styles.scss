@@ -8,13 +8,15 @@
 }
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  scroll-behavior: smooth !important;
+  // scroll-behavior: smooth !important;
   overflow-x: hidden;
   overflow-y: initial;
   position: relative;
 }
+
 html,
 body {
+  scroll-behavior: smooth !important;
   position: relative;
   height: 100%;
   font-family: cairo !important;
@@ -32,7 +34,8 @@ body {
   // background-color: transparent !important;
   // border-color: transparent !important;
   // padding: 0 !important;
-  top: 40% !important;
+  top: 0 !important;
+  // position: fixed !important;
 }
 // ::ng-deep .mat-dialog-container {
 //   background-color: transparent !important;

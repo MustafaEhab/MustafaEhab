@@ -34,7 +34,7 @@
   width: 90%;
 }
 .tickets-desc {
-  color: #ccc;
+  color: #eee;
   text-align: center;
   text-justify: center;
 }
@@ -70,15 +70,18 @@
   font-weight: 500;
 }
 .account-data h1 {
-  color: #fff;
+  color: #fea30f;
+  font-size: x-large;
+  text-shadow: 2px 2px 3px #000;
 }
 .account-data h2 span {
   color: #fea30f;
-}
-.account-data h2 small {
-  color: #ddd;
   text-shadow: 2px 2px 3px #000;
 }
+// .account-data h2 small {
+//   color: #ddd;
+
+// }
 .table-bg {
   background-image: linear-gradient(
     45deg,
@@ -87,8 +90,17 @@
   );
   color: #fff;
 }
-thead {
-  color: #fea30f;
+thead tr {
+  color: #fff;
+  // align-items: center !important;
+  // align-content: center !important;
+  // text-align: center !important;
+  text-justify: center;
+  -ms-text-justify: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  // justify-tracks:;
 }
 .cancellation-container {
   background-image: linear-gradient(
