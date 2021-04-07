@@ -89,6 +89,7 @@
     rgba(#fea30f, 0.2)
   );
   color: #fff;
+  // width: 75vw !important;
 }
 thead tr {
   color: #fff;
@@ -183,6 +184,9 @@ ul li:before {
   }
   .btn-outline-warning {
     font-size: 1.8vw;
+  }
+  .table-bg {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 575.5px) {
