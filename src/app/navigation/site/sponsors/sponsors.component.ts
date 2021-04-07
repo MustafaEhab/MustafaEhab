@@ -29,9 +29,6 @@ export class SponsorsComponent implements OnInit {
     "pauseOnHover": false,
   };
 
-  slickInit(e) {
-    console.log('slick initialized');
-  }
 
   // breakpoint(e) {
   //   console.log('breakpoint');

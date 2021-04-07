@@ -1,19 +1,17 @@
 
- var currentMonth = new Date().getMonth();
+//  var currentMonth = new Date().getMonth();
 //  var currentMonth = 10;
- var change ;
- var disabled = false;
- console.log('mooonth', currentMonth);
- if(currentMonth <= 7 ){
-    change = false;
- }
- else{
-     change = true;
-     if (currentMonth >= 11){
-        disabled = true;
-     }
- }
-console.log ('change', change)
+//  var change ;
+//  var disabled = false;
+//  if(currentMonth <= 7 ){
+//     change = false;
+//  }
+//  else{
+//      change = true;
+//      if (currentMonth >= 11){
+//         disabled = true;
+//      }
+//  }
  var countDownDate = new Date("December 1, 2021 16:37:52").getTime();
 
     // Run myfunc every second

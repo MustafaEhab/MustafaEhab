@@ -16,8 +16,7 @@
         </div>
     </div>
     <div class="pt-4 px-0 pb-0">
-        <ngx-slick-carousel ick-carouselclass="carousel" #slickModal="slick-carousel" [config]="slideConfig"
-            (init)="slickInit($event)">
+        <ngx-slick-carousel ick-carouselclass="carousel" #slickModal="slick-carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide"
                 class="d-fex p-0 m-0 align-content-center align-items-center">
                 <img src="{{slide.img}}" alt="" width="75%" class="slick-image">
