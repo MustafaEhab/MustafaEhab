@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import Swal from 'sweetalert2'
 @Component({
@@ -16,62 +16,78 @@ export class RegisterationComponent implements OnInit {
   selectedValue: string;
   formValues;
   check = false;
+  form: FormGroup;
+  categoryList = [
+    {
+      guest: "International or Regional Participant",
+    },
+    {
+      guest: "IAAH and ACAM Members",
+    },
+    {
+      guest: "Participants from Egypt",
+    },
+    {
+      guest: "Medical Students",
+    }
+  ]
   constructor(
     public dialog: MatDialog,
     @Inject(MAT_DIALOG_DATA) public data,
     public dialogRef: MatDialogRef<RegisterationComponent>,
+    private fb: FormBuilder,
   ) { }
 
   ngOnInit(): void {
     var elem = document.getElementById('f')
-    elem.scrollIntoView({ behavior: "smooth", block: "start" })
+    elem.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    this.form = this.fb.group({
+      emailFormControl: ['', [
+        Validators.required,
+        Validators.email,
+      ]],
+      firstNameControl: ['', [Validators.required,]],
+      lastNameControl: ['', [Validators.required,]],
+      birthControl: ['', [Validators.required,]],
+      nationality: ['', [Validators.required,]],
+      gender: ['', [Validators.required,]],
+      profession: ['', [Validators.required,]],
+      telephone: ['', [Validators.required,]],
+      title: [],
+      fax: [],
+      PresentAffiliation: [],
+      Accompanying: [],
+      paperPresenting: [],
+      category: ['', [Validators.required,]]
+    })
   }
-  form = new FormGroup({
-    emailFormControl: new FormControl('', [
-      Validators.required,
-      Validators.email,
-    ]),
-    firstNameControl: new FormControl('', [Validators.required,]
-    ),
-    lastNameControl: new FormControl('', [Validators.required,]
-    ),
-    birthControl: new FormControl('', [Validators.required,]
-    ),
-    nationality: new FormControl('', [Validators.required,]
-    ),
-    gender: new FormControl('', [Validators.required,]
-    ),
-    profession: new FormControl('', [Validators.required,]
-    ),
-    residence: new FormControl('', [Validators.required,]
-    ),
-    telephone: new FormControl('', [Validators.required,]
-    ),
-    jobTitle: new FormControl(),
-    fax: new FormControl(),
-    PresentAffiliation: new FormControl(),
-    Accompanying: new FormControl(),
-    paperPresenting: new FormControl(),
-    arrivalDate: new FormControl(),
-    departure: new FormControl(),
-    paymentAmount: new FormControl(),
-  })
-  tegister(f) {
-    if (this.form.valid) {
-      // this.check = false;
-      this.dialog.closeAll()
-      this.formValues = JSON.stringify(f.value)
-      console.log(this.formValues);
-      Swal.fire(
-        {
-          imageUrl: '../../../../assets/imgs/hands.png',
-          imageAlt: 'Custom image',
-          title: 'Your registration has been done successfully',
-          showConfirmButton: false,
-          timer: 2000
-        }
-      )
+  tegister() {
+    // console.log(this.loanForm.mobile.errors);
+    // stop here if form is invalid
+    if (this.form.invalid) {
+      // console.log(this.form);
+      return;
     }
+    this.formValues = JSON.stringify(this.form.value, null, 4);
+    console.log('values', this.formValues)
+    this.dialogRef.close();
+    Swal.fire(
+      {
+        imageUrl: '../../../../assets/imgs/hands.png',
+        imageAlt: 'Custom image',
+        title: 'Your registration has been done successfully',
+        // showConfirmButton: false,
+        // timer: 2000
+      }
+    )
+    // if (this.form.valid) {
+    //   // this.check = false;
+    //   // this.dialog.closeAll()
+    //   this.formValues = JSON.stringify(f.value)
+    //   console.log(this.formValues);
+
+    // }
   }
 
 }

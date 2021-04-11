@@ -38,7 +38,7 @@ export class AccomodationComponent implements OnInit {
   tickets_egyptians = [
     {
       guest: "غرفة مفردة مطله على البحر",
-      amount: "1800",
+      amount: "1600",
       currency: "جنيه",
     },
     {

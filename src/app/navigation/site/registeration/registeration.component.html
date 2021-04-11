@@ -1,8 +1,8 @@
 <h2 mat-dialog-title>Register Now</h2>
 <mat-dialog-content class="">
-    <form class="example-form px-4" [formGroup]="form" #f="ngForm" id="f">
+    <form class="example-form px-4" [formGroup]="form" #f="ngForm" id="f" (ngSubmit)="tegister()">
         <div class="form-row justify-content-center">
-            <div class="form-group col-lg-6 col-md-6">
+            <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
@@ -19,7 +19,7 @@
                     </mat-error>
                 </mat-form-field>
             </div>
-            <div class="form-group col-lg-6 col-md-6">
+            <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
@@ -36,18 +36,6 @@
                     </mat-error>
                 </mat-form-field>
             </div>
-        </div>
-        <div class="form-row justify-content-center">
-            <div class="form-group col-lg-4 col-md-4">
-                <mat-form-field class="example-full-width">
-                    <mat-label>
-                        <span>
-                            Title
-                        </span>
-                    </mat-label>
-                    <input type="text" matInput formControlName="jobTitle" placeholder="Enter Your Title">
-                </mat-form-field>
-            </div>
             <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
@@ -57,14 +45,16 @@
                     </mat-label>
                     <input type="date" matInput formControlName="birthControl" placeholder="Enter Your Last Name">
                     <!-- <mat-error *ngIf="form.controls.birthControl.hasError('required') && f.submitted">
-                        Birth Date is <strong>required</strong>
-                    </mat-error> -->
+                                    Birth Date is <strong>required</strong>
+                                </mat-error> -->
 
                     <mat-error *ngIf="form.controls.birthControl.hasError('required')">
                         Birth Date is <strong>required</strong>
                     </mat-error>
                 </mat-form-field>
             </div>
+        </div>
+        <div class="form-row justify-content-center">
             <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
@@ -82,9 +72,62 @@
                     </mat-error>
                 </mat-form-field>
             </div>
+            <div class="form-group col-lg-4 col-md-4">
+                <mat-form-field class="example-full-width">
+                    <mat-label>
+                        <span>
+                            Title
+                        </span>
+                    </mat-label>
+                    <input type="text" matInput formControlName="title" placeholder="Enter Your Title">
+                </mat-form-field>
+            </div>
+            <div class="form-group col-lg-4 col-md-4">
+                <mat-form-field class="example-full-width">
+                    <mat-label>
+                        <span>
+                            Nationality
+                        </span>
+                    </mat-label>
+                    <input type="text" matInput formControlName="nationality" placeholder="Enter Your  Nationality">
+                    <!-- <mat-error *ngIf="form.controls.nationality.hasError('required') && f.submitted">
+                                Nationality is <strong>required</strong>
+                            </mat-error> -->
+
+                    <mat-error *ngIf="form.controls.nationality.hasError('required')">
+                        Nationality is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </div>
         </div>
         <div class="form-row justify-content-center">
-            <div class="form-group col-lg-12 col-md-12">
+            <div class="form-group col-lg-6 col-md-6">
+                <mat-form-field class="example-full-width">
+                    <mat-label>
+                        <span>
+                            Profession
+                        </span>
+                    </mat-label>
+                    <input type="text" matInput formControlName="profession" placeholder="Enter Your Profession">
+                    <mat-error *ngIf="form.controls.profession.hasError('required')">
+                        Profession is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="form-group col-lg-6 col-md-6">
+                <mat-form-field class="example-full-width">
+                    <mat-label>
+                        <span>
+                            Present Affiliation
+                        </span>
+                    </mat-label>
+                    <input type="text" matInput formControlName="PresentAffiliation"
+                        placeholder="Enter Your Present Affiliation">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="form-row justify-content-center">
+            <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
@@ -105,45 +148,7 @@
                     </mat-error>
                 </mat-form-field>
             </div>
-        </div>
-        <div class="form-row justify-content-center">
-            <div class="form-group col-lg-6 col-md-6">
-                <mat-form-field class="example-full-width">
-                    <mat-label>
-                        <span>
-                            Nationality
-                        </span>
-                    </mat-label>
-                    <input type="text" matInput formControlName="nationality" placeholder="Enter Your  Nationality">
-                    <!-- <mat-error *ngIf="form.controls.nationality.hasError('required') && f.submitted">
-                        Nationality is <strong>required</strong>
-                    </mat-error> -->
-
-                    <mat-error *ngIf="form.controls.nationality.hasError('required')">
-                        Nationality is <strong>required</strong>
-                    </mat-error>
-                </mat-form-field>
-            </div>
-            <div class="form-group col-lg-6 col-md-6">
-                <mat-form-field class="example-full-width">
-                    <mat-label>
-                        <span>
-                            Profession
-                        </span>
-                    </mat-label>
-                    <input type="text" matInput formControlName="profession" placeholder="Enter Your Profession">
-                    <!-- <mat-error *ngIf="form.controls.profession.hasError('required') && f.submitted">
-                        Profession is <strong>required</strong>
-                    </mat-error> -->
-
-                    <mat-error *ngIf="form.controls.profession.hasError('required')">
-                        Profession is <strong>required</strong>
-                    </mat-error>
-                </mat-form-field>
-            </div>
-        </div>
-        <div class="form-row justify-content-center">
-            <div class="form-group col-lg-6 col-md-6">
+            <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
@@ -152,15 +157,15 @@
                     </mat-label>
                     <input type="number" matInput formControlName="telephone" placeholder="Enter Your Telephone Number">
                     <!-- <mat-error *ngIf="form.controls.telephone.hasError('required') && f.submitted">
-                        Telephone Number is <strong>required</strong>
-                    </mat-error> -->
+                                    Telephone Number is <strong>required</strong>
+                                </mat-error> -->
 
                     <mat-error *ngIf="form.controls.telephone.hasError('required')">
                         Telephone Number is <strong>required</strong>
                     </mat-error>
                 </mat-form-field>
             </div>
-            <div class="form-group col-lg-6 col-md-6">
+            <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
@@ -169,93 +174,55 @@
                     </mat-label>
                     <input type="number" matInput formControlName="fax" placeholder="Enter Your Present Fax Number">
                     <!-- <mat-error *ngIf="form.controls.telephone.hasError('required')">
-                        Telephone Number is <strong>required</strong>
-                    </mat-error> -->
+                                    Telephone Number is <strong>required</strong>
+                                </mat-error> -->
 
                 </mat-form-field>
             </div>
         </div>
         <div class="form-row justify-content-center">
-            <div class="form-group col-lg-6 col-md-6">
+            <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
-                            Present Affiliation
-                        </span>
-                    </mat-label>
-                    <input type="text" matInput formControlName="PresentAffiliation"
-                        placeholder="Enter Your Present Affiliation">
-                </mat-form-field>
-            </div>
-            <div class="form-group col-lg-6 col-md-6">
-                <mat-form-field class="example-full-width">
-                    <mat-label>
-                        <span>
-                            Country of current residence
-                        </span>
-                    </mat-label>
-                    <input type="text" matInput formControlName="residence"
-                        placeholder="Enter Your Country of current residence">
-                    <!-- <mat-error *ngIf="form.controls.residence.hasError('required') && f.submitted">
-                        Country of current residence is <strong>required</strong>
-                    </mat-error> -->
-
-                    <mat-error *ngIf="form.controls.residence.hasError('required')">
-                        Country of current residence is <strong>required</strong>
-                    </mat-error>
-                </mat-form-field>
-            </div>
-        </div>
-        <div class="form-row justify-content-center">
-            <div class="form-group col-lg-12 col-md-12">
-                <mat-form-field class="example-full-width">
-                    <mat-label>
-                        <span>
-                            Accompanying person ( You have to by him a ticket )
+                            Accompanying person
                         </span>
                     </mat-label>
                     <input type="text" matInput formControlName="Accompanying"
                         placeholder="Enter Accompanying person Full Name">
                 </mat-form-field>
             </div>
-        </div>
-        <div class="form-row justify-content-center">
-            <div class="form-group col-lg-12 col-md-12">
+            <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
-                            Are you presenting a paper?
+                            Are you presenting a paper? ( Title )
                         </span>
                     </mat-label>
                     <input type="text" matInput formControlName="paperPresenting" placeholder="">
                 </mat-form-field>
             </div>
-        </div>
-        <div class="form-row justify-content-center">
-            <div class="form-group col-lg-6 col-md-12">
+            <div class="form-group col-lg-4 col-md-4">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
-                            Expected Arrival date in Hurghada
+                            Registration Category
                         </span>
                     </mat-label>
-                    <input type="date" matInput formControlName="arrivalDate" placeholder="Expected Arrival date">
-                </mat-form-field>
-            </div>
-            <div class="form-group col-lg-6 col-md-12">
-                <mat-form-field class="example-full-width">
-                    <mat-label>
-                        <span>
-                            Departure Date
-                        </span>
-                    </mat-label>
-                    <input type="date" matInput formControlName="departure" placeholder="Departure">
+                    <mat-select name="category" formControlName="category">
+                        <mat-option *ngFor="let c of categoryList" [value]="c.guest">
+                            {{c.guest}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="form.controls.category.hasError('required')">
+                        Registration Category is <strong>required</strong>
+                    </mat-error>
                 </mat-form-field>
             </div>
         </div>
+
         <div class="form-row justify-content-center">
-            <button mat-button mat-raised-button class="btn-success" type="submit"
-                (click)="tegister(f)">Register</button>
+            <button mat-button mat-raised-button class="btn-success" type="submit">Register</button>
         </div>
     </form>
     <ul class="list-unstyled py-4">
@@ -300,5 +267,7 @@
     </ul>
 </mat-dialog-content>
 <mat-dialog-actions align="center">
-    <button mat-button mat-dialog-close class="btn btn-danger">Cancel</button>
+    <button mat-button mat-dialog-close class="btn btn-danger">
+        Return To Website
+    </button>
 </mat-dialog-actions>

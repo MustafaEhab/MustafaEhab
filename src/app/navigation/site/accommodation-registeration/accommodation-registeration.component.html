@@ -1,8 +1,8 @@
 <h2 mat-dialog-title>Book Now</h2>
 <mat-dialog-content class="">
-    <form class="example-form px-4" [formGroup]="form" #f="ngForm">
+    <form class="example-form px-4" [formGroup]="form" (ngSubmit)="tegister()" #f="ngForm">
         <div class="form-row justify-content-center">
-            <div class="form-group col-lg-12 col-md-12">
+            <div class="form-group col-lg-6 col-md-6">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
@@ -15,9 +15,7 @@
                     </mat-error>
                 </mat-form-field>
             </div>
-        </div>
-        <div class="form-row justify-content-center">
-            <div class="form-group col-lg-12 col-md-12">
+            <div class="form-group col-lg-6 col-md-6">
                 <mat-form-field class="example-full-width">
                     <mat-label>
                         <span>
@@ -134,8 +132,7 @@
             </div>
         </div>
         <div class="form-row justify-content-center">
-            <button mat-button mat-raised-button class="btn-success" type="submit"
-                (click)="tegister(f)">Register</button>
+            <button mat-button mat-raised-button class="btn-success" type="submit">Register</button>
         </div>
     </form>
     <ul class="list-unstyled py-4">
@@ -187,5 +184,7 @@
     </ul>
 </mat-dialog-content>
 <mat-dialog-actions align="center">
-    <button mat-button mat-dialog-close class="btn btn-danger">Cancel</button>
+    <button mat-button mat-dialog-close class="btn btn-danger">
+        Return To Website
+    </button>
 </mat-dialog-actions>
