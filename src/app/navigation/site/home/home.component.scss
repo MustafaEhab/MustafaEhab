@@ -126,6 +126,15 @@
   font-size: 1vw;
   color: #fea30f;
 }
+.overlay {
+  background-color: rgba($color: #262524, $alpha: 0.8) !important;
+}
+.patronage {
+  background-color: rgba($color: #000, $alpha: 0.5);
+}
+.patronage h1 {
+  font-size: 3vw !important;
+}
 @media screen and (max-width: 992px) {
   .carousel {
     height: auto !important;

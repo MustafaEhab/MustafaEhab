@@ -167,8 +167,18 @@
                 </mat-tab>
 
                 <mat-tab label="HURGHADA">
-                    <div class="pt-4 pb-5 px-5 text-left">
-
+                    <div class="pt-4 pb-5 w-100 px-5 text-center">
+                        <h2 class="text-dark">
+                            Hurghada is a beach resort town stretching some 40km along Egypt’s Red Sea coast.
+                        </h2>
+                        <div class="row mx-auto justify-content-center">
+                            <div class="col-3 col-md-3 col-sm-4 col-xs-6 p-0" *ngFor="let image of album; let i=index">
+                                <div class="w-100" style="padding: 7px;">
+                                    <img [src]="image.src" alt="" (click)="open(i)"
+                                        style="max-width:100%; width:100%; border: 4px solid #262524; border-radius:10px; cursor:pointer">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </mat-tab>
 

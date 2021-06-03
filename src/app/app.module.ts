@@ -33,6 +33,7 @@ import { AccomodationComponent } from './navigation/site/accomodation/accomodati
 import { LoaderComponent } from './loader/loader.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { RouterModule, Routes } from '@angular/router';
+import { LightboxModule } from 'ngx-lightbox';
 
 
 library.add(fas, far, fab);
@@ -69,7 +70,8 @@ library.add(fas, far, fab);
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCHnj2ejtMhrAZ6UsOPw3TQtulK1RUd1Yo'
     }),
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

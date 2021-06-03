@@ -11,7 +11,11 @@ export class SpeakersComponent implements OnInit {
     {
       name: "Dr. Montasser Kamal",
       title: "Program leader, global health, IDRC, Canada",
-      confirmation: "( To be confirmed )"
+      // confirmation: "( To be confirmed )"
+    },
+    {
+      name: "Prof. Rema Afifi",
+      title: "Professor, Community and Behavioral Health, College of Public Health, University of Iowa"
     },
     {
       name: "Dr. Umaiyeh Khammash",
@@ -85,9 +89,9 @@ export class SpeakersComponent implements OnInit {
     }
   ]
   organizing = [
-    {
-      name: "Dr. Ahmed Saied",
-    },
+    // {
+    //   name: "Dr. Ahmed Saied",
+    // },
     {
       name: "Ms. Farah Feteha",
     },
